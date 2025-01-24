@@ -19,21 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Check for ground
-        /*
-        //isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);
-        RaycastHit2D hit;
-        ContactFilter2D filter;
         
-        if(Physics2D.Raycast(transform.position,transform.TransformDirection(Vector2.down),))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-        */
 
         Movement();
         Jumping();

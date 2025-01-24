@@ -254,10 +254,7 @@ MonoBehaviour:
   spawnInterval: 1
   minX: -3
   maxX: 3
-  startY: 2
-  minSize: 0.15
-  maxSize: 1
-  baseSpeed: 2
+  startY: 5
 --- !u!4 &1020645082
 Transform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5386610263358918036}
   - component: {fileID: 494709366286991429}
   - component: {fileID: 6604515632113664147}
+  - component: {fileID: 2911206457692899000}
   m_Layer: 3
   m_Name: Bubble
   m_TagString: Ground
@@ -152,3 +153,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2911206457692899000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937009930337502137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b682d8a169ea8439cfd8e9294b75f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsStartingBubble: 0
+  minSize: 0.25
+  maxSize: 1.5
+  baseSpeed: 10
