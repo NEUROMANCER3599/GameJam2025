@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded)
             {
+                
                 rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
             }
             

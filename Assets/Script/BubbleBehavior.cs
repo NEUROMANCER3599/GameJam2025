@@ -1,6 +1,6 @@
 using UnityEditor.Rendering;
 using UnityEngine;
-
+using System.Collections;
 public class BubbleBehavior : MonoBehaviour
 {
     [Header("Customization Parameters")]
@@ -11,6 +11,7 @@ public class BubbleBehavior : MonoBehaviour
     
 
     [Header("System")]
+    private ObjectSpawner _objectSpawner;
     private Rigidbody2D rb;
     private float moveSpeed;
     private float randomSize;
@@ -22,6 +23,7 @@ public class BubbleBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _objectSpawner = FindAnyObjectByType<ObjectSpawner>();
         rb = GetComponent<Rigidbody2D>();
        
 
@@ -34,11 +36,11 @@ public class BubbleBehavior : MonoBehaviour
 
     private void Update()
     {
-        rb.linearVelocity = new Vector2(0, moveSpeed);
+        rb.velocity = new Vector2(0, moveSpeed);
         
 
         Lifespan -= 1f * Time.deltaTime;
-
+    
         if(Lifespan <= 0)
         {
             BubbleDestruction();
@@ -48,6 +50,13 @@ public class BubbleBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
             {
+                if (randomSize <= minSize + 0.15f)
+                {
+                    for(int i = 0;i<4; i++)
+                    {
+                        _objectSpawner.SpawnObjectByOthers(5f);
+                    }
+                }
                 BubbleDestruction();
             }
         }
@@ -79,5 +88,7 @@ public class BubbleBehavior : MonoBehaviour
 
         }
     }
+
+   
 
 }

@@ -255,7 +255,10 @@ MonoBehaviour:
   spawnInterval: 0.5
   minX: -3
   maxX: 3
-  startY: 5
+  startY: 2
+  minSize: 0.15
+  maxSize: 1
+  baseSpeed: 2
 --- !u!4 &1020645082
 Transform:
   m_ObjectHideFlags: 0
@@ -284,10 +287,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterPrefab: {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
-  spawnInterval: 1
+  spawnInterval: 5
   minX: -3
   maxX: 3
-  startY: 5
+  startY: 2
   moveSpeed: 2
 --- !u!1001 &1476048023
 PrefabInstance:
