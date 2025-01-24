@@ -60,9 +60,13 @@ public class PlayerMovement : MonoBehaviour
     void Jumping()
     {
         // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            if (isGrounded)
+            {
+                rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            }
+            
         }
         //Diving
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
