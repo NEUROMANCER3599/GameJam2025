@@ -4,8 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Parameters")]
     public float speed = 5f;
-    public float MinJumpForce = 10;
-    public float MaxJumpForce = 15;
+    public float JumpForce = 10;
     public string GroundCheckTag = "Ground";
 
     [Header("Components")]
@@ -20,9 +19,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Check for ground
+        /*
         //isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);
         RaycastHit2D hit;
-        if(Physics2D.Raycast(transform.position,transform.TransformDirection(Vector2.down),0.1f))
+        ContactFilter2D filter;
+        
+        if(Physics2D.Raycast(transform.position,transform.TransformDirection(Vector2.down),))
         {
             isGrounded = true;
         }
@@ -30,13 +32,16 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
+        */
+
+        Movement();
+        Jumping();
     }
 
     void FixedUpdate()
     {
 
-        Movement();
-        Jumping();
+       
        
     }
 
@@ -45,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         // Move horizontally
-        rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+        if (!isGrounded)
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+        }
+        
     }
 
     void Jumping()
@@ -53,16 +62,30 @@ public class PlayerMovement : MonoBehaviour
         // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(Vector2.up * MinJumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+        }
+        //Diving
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            if (!isGrounded)
+            {
+                rb.gravityScale = 1 * speed;
+            }
+        }
+
+        if(Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            rb.gravityScale = 1;
         }
     }
 
-    /*
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == GroundCheckTag)
         {
             isGrounded = true;
+
         }
     }
 
@@ -73,5 +96,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-    */
+    
+    
 }
