@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
+    [Header("Parameters")]
+    private Transform playerTransform;
     public GameObject objectPrefab; // พรีแฟบของวัตถุที่ต้องการสุ่มเกิด
     public float spawnInterval = 1f; // ระยะเวลาระหว่างการเกิด
     public float minX = -5f; // ตำแหน่ง X ต่ำสุด
@@ -14,14 +16,16 @@ public class ObjectSpawner : MonoBehaviour
     void Start()
     {
         // เรียกใช้ฟังก์ชัน SpawnObject ซ้ำ ๆ
+        playerTransform = GameObject.FindAnyObjectByType<PlayerMovement>().transform;
         InvokeRepeating("SpawnObject", 0f, spawnInterval);
+
     }
 
     void SpawnObject()
     {
         // สุ่มตำแหน่ง X
         float randomX = Random.Range(minX, maxX);
-        Vector3 spawnPosition = new Vector3(randomX, startY, 0f);
+        Vector3 spawnPosition = new Vector3(randomX, playerTransform.position.y - startY, 0f);
 
         // สร้างวัตถุ
         GameObject newObject = Instantiate(objectPrefab, spawnPosition, Quaternion.identity);
@@ -40,7 +44,7 @@ public class ObjectSpawner : MonoBehaviour
             rb = newObject.AddComponent<Rigidbody2D>();
         }
         rb.gravityScale = 0; // ปิดแรงโน้มถ่วง
-        rb.velocity = new Vector2(0, moveSpeed); // กำหนดให้วัตถุเลื่อนขึ้นในแนว Y
+        rb.linearVelocity = new Vector2(0, moveSpeed); // กำหนดให้วัตถุเลื่อนขึ้นในแนว Y
         
         Destroy(newObject,10f);
     }

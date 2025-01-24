@@ -24,7 +24,7 @@ public class MoveOnPlayerTouch : MonoBehaviour
         // ถ้า isActivated เป็น true ให้ขยับขึ้นในแนว Y
         if (isActivated)
         {
-            rb.velocity = new Vector2(0, moveSpeed);
+            rb.linearVelocity = new Vector2(0, moveSpeed);
         }
     }
 

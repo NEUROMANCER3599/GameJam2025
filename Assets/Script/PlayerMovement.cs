@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public string GroundCheckTag = "Ground";
 
     [Header("Components")]
+    public SpriteRenderer PlayerSprite;
     private Rigidbody2D rb;
     private bool isGrounded;
 
@@ -54,7 +55,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
         }
-        
+
+        if (horizontalInput > 0)
+        {
+            PlayerSprite.flipX = true;
+        }
+        else
+        {
+            PlayerSprite.flipX = false;
+        }
     }
 
     void Jumping()
