@@ -63,6 +63,7 @@ public class ObjectSpawner : MonoBehaviour
  
     }
 
+
     /*
     public void SpawnObjectByOthers(float UpPosition)
     {
