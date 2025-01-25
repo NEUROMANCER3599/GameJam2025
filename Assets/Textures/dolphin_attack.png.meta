@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dolphin_attack_0: -6445699670764527747
+      dolphin_attack_1: 1207550587574460373
+      dolphin_attack_2: 2406350500197878474
+      dolphin_attack_3: -498808655319099915
+      dolphin_attack_4: 1714616800024164145
+      dolphin_attack_5: -6963598446406016605
+      dolphin_attack_6: 1888949560328343040
+      dolphin_attack_7: 850925229113180636
+      dolphin_attack_8: -5688222421756622642
+      dolphin_attack_9: -5722380792191389756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

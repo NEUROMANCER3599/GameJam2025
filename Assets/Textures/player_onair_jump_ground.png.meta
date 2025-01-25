@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_onair_jump_ground_0: -515256733607828355
+      player_onair_jump_ground_1: 5012084806684632788
+      player_onair_jump_ground_10: 3697427481031871103
+      player_onair_jump_ground_11: 6669285305633600321
+      player_onair_jump_ground_12: -3132959612478629333
+      player_onair_jump_ground_13: 8085408866203703640
+      player_onair_jump_ground_2: -2250201979232657883
+      player_onair_jump_ground_3: 624103397845986621
+      player_onair_jump_ground_4: 9196315586809033040
+      player_onair_jump_ground_5: 8481357657159630831
+      player_onair_jump_ground_6: -3521138069189731944
+      player_onair_jump_ground_7: -2414438104730347298
+      player_onair_jump_ground_8: 7188021502290046255
+      player_onair_jump_ground_9: -4190706787668336652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

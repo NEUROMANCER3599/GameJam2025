@@ -394,11 +394,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238403513}
   m_CullTransparentMesh: 1
---- !u!1 &385081143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2689811913751979789, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
-  m_PrefabInstance: {fileID: 662015384}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &476367964
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,10 +559,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2689811913751979789, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1548267483}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
 --- !u!1 &778438968
 GameObject:
@@ -597,7 +589,7 @@ RectTransform:
   m_GameObject: {fileID: 778438968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.1644, y: 4.1644, z: 4.1644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238403514}
@@ -605,7 +597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: -675}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778438970
@@ -948,18 +940,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6131652174420801623, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
   m_PrefabInstance: {fileID: 662015384}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1548267483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385081143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a5a0d5220f377438c10c0e6d15499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1905567429
 GameObject:
   m_ObjectHideFlags: 0
