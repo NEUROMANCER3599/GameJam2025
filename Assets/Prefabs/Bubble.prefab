@@ -282,3 +282,4 @@ MonoBehaviour:
   baseSpeed: 10
   SpeedCap: 20
   BubbleAnimator: {fileID: 3210806098715925604}
+  BaseScore: 100
