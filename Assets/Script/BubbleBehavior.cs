@@ -9,9 +9,11 @@ public class BubbleBehavior : MonoBehaviour
     public float maxSize = 2f; 
     public float baseSpeed = 2f;
     public float SpeedCap;
-    
+
 
     [Header("System")]
+    public Animator BubbleAnimator;
+    private CircleCollider2D circleCollider;
     private ObjectSpawner _objectSpawner;
     private Rigidbody2D rb;
     private PlayerMovement playerMovement;
@@ -26,6 +28,7 @@ public class BubbleBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        circleCollider = GetComponent<CircleCollider2D>();
         _objectSpawner = FindAnyObjectByType<ObjectSpawner>();
         rb = GetComponent<Rigidbody2D>();
        playerMovement = FindAnyObjectByType<PlayerMovement>();
@@ -38,7 +41,7 @@ public class BubbleBehavior : MonoBehaviour
             moveSpeed = SpeedCap;
         }
         Lifespan = randomSize * 15;
-        TouchedLifeSpan = Lifespan * 0.25f;
+        TouchedLifeSpan = Lifespan * 0.1f;
     }
 
     private void Update()
@@ -73,7 +76,9 @@ public class BubbleBehavior : MonoBehaviour
 
    void BubbleDestruction()
     {
-        Destroy(gameObject);
+        circleCollider.enabled = false;
+        BubbleAnimator.SetTrigger("OnDeath");
+        Destroy(gameObject,1f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -82,6 +87,7 @@ public class BubbleBehavior : MonoBehaviour
         {
             if (!IsTouched)
             {
+                BubbleAnimator.SetBool("IsSteppedOn", true);
                 Lifespan = TouchedLifeSpan;
                 IsTouched = true;
             }
@@ -93,7 +99,8 @@ public class BubbleBehavior : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerMovement>())
         {
-           IsTouched = false;
+            BubbleAnimator.SetBool("IsSteppedOn", false);
+            IsTouched = false;
 
         }
     }

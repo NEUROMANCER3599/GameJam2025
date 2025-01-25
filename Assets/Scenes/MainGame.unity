@@ -253,8 +253,8 @@ MonoBehaviour:
   BubblePrefab: {fileID: 4937009930337502137, guid: 1eb8d767482e0c946b18b738cdef3216, type: 3}
   MonsterPrefabs:
   - {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
-  minX: -3
-  maxX: 3
+  minX: -4.5
+  maxX: 4.5
   startY: 8
   BPM: 160
 --- !u!4 &1020645082
@@ -280,6 +280,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5906753593203478182, guid: 833d6699681c92f45848c198e246dff0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5906753593203478182, guid: 833d6699681c92f45848c198e246dff0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -347,9 +351,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1053676682441001236, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202276870564302088, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4815936853651775471, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
       propertyPath: m_Name
       value: Boudaries
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452887370766289264, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7018549658764371647, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
       propertyPath: m_LocalPosition.x
