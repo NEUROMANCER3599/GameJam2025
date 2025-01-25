@@ -169,3 +169,4 @@ MonoBehaviour:
   minSize: 0.25
   maxSize: 1.5
   baseSpeed: 10
+  SpeedCap: 20

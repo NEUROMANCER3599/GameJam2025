@@ -29,7 +29,7 @@ public class MonsterShooter : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.velocity = direction * projectileSpeed; // กำหนดความเร็วและทิศทางของ projectile
+            rb.linearVelocity = direction * projectileSpeed; // กำหนดความเร็วและทิศทางของ projectile
         }
     }
 }

@@ -33,6 +33,6 @@ public class MonsterSpawner : MonoBehaviour
             rb = newObject.AddComponent<Rigidbody2D>();
         }
         rb.gravityScale = 0; // ปิดแรงโน้มถ่วง
-        rb.velocity = new Vector2(0, moveSpeed); // กำหนดให้วัตถุเลื่อนขึ้นในแนว Y
+        rb.linearVelocity = new Vector2(0, moveSpeed); // กำหนดให้วัตถุเลื่อนขึ้นในแนว Y
     }
 }

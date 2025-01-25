@@ -231,7 +231,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1020645082}
   - component: {fileID: 1020645081}
-  - component: {fileID: 1020645083}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -251,11 +250,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c6ea6fc0a45c94d8c579c9807f691e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 4937009930337502137, guid: 1eb8d767482e0c946b18b738cdef3216, type: 3}
-  spawnInterval: 0.5
+  BubblePrefab: {fileID: 4937009930337502137, guid: 1eb8d767482e0c946b18b738cdef3216, type: 3}
+  MonsterPrefabs:
+  - {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
   minX: -3
   maxX: 3
-  startY: 5
+  startY: 8
+  BPM: 160
 --- !u!4 &1020645082
 Transform:
   m_ObjectHideFlags: 0
@@ -271,24 +272,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1020645083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020645080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb27bc3aad65bc42a41008f748a8b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
-  spawnInterval: 1
-  minX: -3
-  maxX: 3
-  startY: 5
-  moveSpeed: 2
 --- !u!1001 &1476048023
 PrefabInstance:
   m_ObjectHideFlags: 0

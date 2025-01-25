@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Components")]
     public SpriteRenderer PlayerSprite;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private bool isGrounded;
 
     void Start()
