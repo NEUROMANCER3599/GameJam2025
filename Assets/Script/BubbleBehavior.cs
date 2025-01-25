@@ -33,25 +33,33 @@ public class BubbleBehavior : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
        playerMovement = FindAnyObjectByType<PlayerMovement>();
 
-        randomSize = Random.Range(minSize, maxSize);
-        transform.localScale = new Vector3(randomSize, randomSize, 1f);
-        moveSpeed = baseSpeed / randomSize;
-        if(moveSpeed > SpeedCap)
+        if (!IsStartingBubble)
         {
-            moveSpeed = SpeedCap;
+            randomSize = Random.Range(minSize, maxSize);
+            transform.localScale = new Vector3(randomSize, randomSize, 1f);
+            moveSpeed = baseSpeed / randomSize;
+            if (moveSpeed > SpeedCap)
+            {
+                moveSpeed = SpeedCap;
+            }
+            Lifespan = randomSize * 15;
+            TouchedLifeSpan = Lifespan * 0.1f;
         }
-        Lifespan = randomSize * 15;
-        TouchedLifeSpan = Lifespan * 0.1f;
+       
     }
 
     private void Update()
     {
-        rb.linearVelocity = new Vector2(0, moveSpeed);
-        
+       
 
-        Lifespan -= 1f * Time.deltaTime;
+        if (!IsStartingBubble)
+        {
+            rb.linearVelocity = new Vector2(0, moveSpeed);
+            Lifespan -= 1f * Time.deltaTime;
+        }
+       
     
-        if(Lifespan <= 0)
+        if(Lifespan <= 0  && !IsStartingBubble)
         {
             BubbleDestruction();
         }
@@ -60,15 +68,7 @@ public class BubbleBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
             {
-                /*
-                if (randomSize <= minSize + 0.15f)
-                {
-                    for(int i = 0;i<4; i++)
-                    {
-                        _objectSpawner.SpawnObjectByOthers(5f);
-                    }
-                }
-                */
+                
                 BubbleDestruction();
             }
         }
@@ -105,6 +105,12 @@ public class BubbleBehavior : MonoBehaviour
         }
     }
 
-   
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Cleaner")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

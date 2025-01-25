@@ -33,7 +33,7 @@ public class ObjectSpawner : MonoBehaviour
     public void OnBegin()
     {
         BubblespawnDuration = 60 / BPM;
-        EnemySpawnInterval = BubblespawnDuration * 4f;
+        EnemySpawnDuration = BubblespawnDuration * 4f;
         BubbleSpawnInterval = BubblespawnDuration;
         EnemySpawnInterval = EnemySpawnDuration;
         
@@ -41,7 +41,7 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Update()
     {
-        if(BubbleSpawnInterval > 0)
+        if (BubbleSpawnInterval > 0)
         {
             BubbleSpawnInterval -= 1f * Time.deltaTime;
         }
@@ -49,6 +49,16 @@ public class ObjectSpawner : MonoBehaviour
         {
             SpawnBubbles();
             BubbleSpawnInterval = BubblespawnDuration;
+        }
+
+        if (EnemySpawnInterval > 0)
+        {
+            EnemySpawnInterval -= 1f * Time.deltaTime;
+        }
+        else
+        {
+            SpawnMonster();
+            EnemySpawnInterval = Random.Range(EnemySpawnDuration,EnemySpawnDuration * 2);
         }
     }
 
@@ -63,15 +73,16 @@ public class ObjectSpawner : MonoBehaviour
  
     }
 
-
-    /*
-    public void SpawnObjectByOthers(float UpPosition)
+    public void SpawnMonster()
     {
         float randomX = Random.Range(minX, maxX);
-        Vector3 spawnPosition = new Vector3(randomX, playerTransform.position.y - startY + UpPosition , 0f);
+        Vector3 spawnPosition = new Vector3(randomX, playerTransform.position.y - startY, 0f);
+
 
         // สร้างวัตถุ
-        Instantiate(objectPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(MonsterPrefabs[Random.Range(0,MonsterPrefabs.Count)], spawnPosition, Quaternion.identity);
+
     }
-    */
+
+
 }
