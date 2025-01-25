@@ -11,10 +11,12 @@ public class PlayerFalling : MonoBehaviour
     private float elapsedTime = 0f; // Time counter for velocity below the threshold
     [SerializeField] private Camera mainCamera;
     private CinemachineBrain cinemachineBrain;
+    private PlayerHealth player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cinemachineBrain = mainCamera.GetComponent<CinemachineBrain>();
+        player = FindAnyObjectByType<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -22,7 +24,7 @@ public class PlayerFalling : MonoBehaviour
     void Update()
     {
         // ตรวจสอบว่าความเร็วในแกน Y เกินค่าที่กำหนด
-        if (rb.velocity.y < velocityThreshold)
+        if (rb.linearVelocity.y < velocityThreshold)
         {
             elapsedTime += Time.deltaTime;
 
@@ -49,6 +51,7 @@ public class PlayerFalling : MonoBehaviour
             Debug.Log("Cinemachine Brain disabled.");
         }
         
+        player.Die();
         Debug.Log("Velocity exceeded the threshold for 3 seconds!");
         // ทำบางอย่างที่คุณต้องการ
     }

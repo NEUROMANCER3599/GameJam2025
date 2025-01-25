@@ -411,7 +411,7 @@ MonoBehaviour:
   BubblePrefab: {fileID: 4937009930337502137, guid: 1eb8d767482e0c946b18b738cdef3216, type: 3}
   MonsterPrefabs:
   - {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
-  - {fileID: 3394817705171161107, guid: 661d4d82233e9394cae41930eb8c9c80, type: 3}
+  - {fileID: 1688155403843239702, guid: f12df346996681741adf104cf4e708b9, type: 3}
   minX: -4.5
   maxX: 4.5
   startY: 8
@@ -599,6 +599,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4031665736044071309, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4815936853651775471, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
       propertyPath: m_Name
       value: Boudaries
@@ -641,6 +645,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7018549658764371647, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942367847704076653, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

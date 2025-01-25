@@ -200,8 +200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3261265783735405239, guid: 572e46fec42dd9441b252f3c96d8a137, type: 3}
   firePoint: {fileID: 4256759814477584476}
-  fireInterval: 3
-  projectileSpeed: 20
+  fireInterval: 2
+  projectileSpeed: 5
   BubbleAnimator: {fileID: 7559814195780008466}
   BubbleSprite: {fileID: 8024079876036527697}
 --- !u!1 &8024079876036527697
