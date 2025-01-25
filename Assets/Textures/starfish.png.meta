@@ -129,6 +129,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      starfish_0: -6987148479580219570
+      starfish_1: 4765980326882044309
+      starfish_10: -2409320311414634627
+      starfish_11: 281970967511664803
+      starfish_2: 8490047252068056058
+      starfish_3: -6444406373238106090
+      starfish_4: 7124613297125226825
+      starfish_5: -644941454326880069
+      starfish_6: 6578926304369161953
+      starfish_7: 7622044724806867824
+      starfish_8: 2228018190492370577
+      starfish_9: -4096576275034991097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
