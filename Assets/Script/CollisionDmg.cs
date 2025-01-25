@@ -3,6 +3,7 @@ using UnityEngine;
 public class CollisionDmg : MonoBehaviour
 {
     public int Damage;
+    public GameObject HitParticlePrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +21,7 @@ public class CollisionDmg : MonoBehaviour
         if(collision.GetComponent<PlayerHealth>())
         {
             PlayerHealth playerHeath = collision.GetComponent<PlayerHealth>();
+            Instantiate(HitParticlePrefab, transform.position, Quaternion.identity);
             playerHeath.TakeDamage(Damage);
         }
     }

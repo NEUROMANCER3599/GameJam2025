@@ -3,8 +3,10 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Scoring : MonoBehaviour
 {
+    public HighscoreRecord scoreRecord;
     private int Score;
     private int Combo;
+    private int MaxCombo;
     private float ComboInterval;
     private float ComboDuration;
     private ObjectSpawner EntitySpawner;
@@ -32,6 +34,49 @@ public class Scoring : MonoBehaviour
         Combo++;
         ComboInterval = ComboDuration;
 
+        if(Combo > MaxCombo)
+        {
+            MaxCombo = Combo;
+        }
+
         //Debug.Log("Current Score :" + Score + " | Current Combo :" + Combo);
+    }
+
+    public void OnSummary()
+    {
+        if(Score > scoreRecord.Highscore)
+        {
+            scoreRecord.Highscore = Score;
+        }
+        if(MaxCombo > scoreRecord.MaxCombo)
+        {
+            scoreRecord.MaxCombo = MaxCombo;
+        }
+
+
+    }
+    public float CheckComboInterval()
+    {
+        return ComboInterval;
+    }
+
+    public float CheckComboDuration()
+    {
+        return ComboDuration;
+    }
+
+    public int CheckScore()
+    {
+        return Score;
+    }
+
+    public int CheckCombo()
+    {
+        return Combo;
+    }
+
+    public int CheckMaxCombo()
+    {
+        return MaxCombo;
     }
 }

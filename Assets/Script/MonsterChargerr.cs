@@ -6,6 +6,8 @@ public class MonsterChargerr : MonoBehaviour
     private PlayerMovement player;
     private Rigidbody2D rb;
     private float moveSpeed;
+    public float MinSpeed;
+    public float MaxSpeed;
     private bool IsDead = false;
     private bool IsTouched = false;
     private bool IsCharging = false;
@@ -19,7 +21,7 @@ public class MonsterChargerr : MonoBehaviour
         scoring = FindAnyObjectByType<Scoring>();
         player = GameObject.FindAnyObjectByType<PlayerMovement>(); // หา GameObject ที่มี Tag "Player"
         rb = GetComponent<Rigidbody2D>();
-        moveSpeed = Random.Range(15, 20);
+        moveSpeed = Random.Range(MinSpeed, MaxSpeed);
     }
 
     private void Update()
@@ -111,7 +113,7 @@ public class MonsterChargerr : MonoBehaviour
         IsDead = true;
         rb.gravityScale = 2;
         rb.freezeRotation = false;
-
+        DolphinAnimator.SetTrigger("OnDeath");
 
     }
 
