@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     private bool isFlashing;
     public float flashCooldown = 0f; // ตัวแปรสำหรับจับเวลา
-    private bool IsDead = false;
+    public GameObject gameOverUI;
     void Start()
     {
         currentHealth = maxHealth; // ตั้งค่าพลังชีวิตเริ่มต้น
@@ -42,14 +42,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        IsDead = true;
         gameObject.layer = 10;
+        Invoke(nameof(SpawnGameOverUI), 3f);
         Debug.Log("Player is dead!");
         // เพิ่มโค้ดเพิ่มเติมเมื่อผู้เล่นตาย เช่น รีเซ็ตเกม หรือแสดง Game Over
     }
 
-    public bool PlayerDeathCheck()
+    public void SpawnGameOverUI()
     {
-        return IsDead;
+        gameOverUI.SetActive(true);
     }
 }
