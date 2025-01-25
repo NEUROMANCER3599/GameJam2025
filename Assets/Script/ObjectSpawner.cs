@@ -7,6 +7,7 @@ public class ObjectSpawner : MonoBehaviour
     private Transform playerTransform;
     public GameObject BubblePrefab; // พรีแฟบของวัตถุที่ต้องการสุ่มเกิด
     public List<GameObject> MonsterPrefabs;
+    public List<GameObject> ItemPrefabs;
     
     public float minX = -5f; // ตำแหน่ง X ต่ำสุด
     public float maxX = 5f; // ตำแหน่ง X สูงสุด
@@ -18,6 +19,8 @@ public class ObjectSpawner : MonoBehaviour
     private  float EnemySpawnDuration;
     private float BubbleSpawnInterval;
     private float EnemySpawnInterval;
+    private float ItemSpawnDuration;
+    private float ItemSpawnInterval;
    
 
 
@@ -34,8 +37,10 @@ public class ObjectSpawner : MonoBehaviour
     {
         BubblespawnDuration = 60 / BPM;
         EnemySpawnDuration = BubblespawnDuration * 4f;
+        ItemSpawnDuration = BubblespawnDuration * 16f;
         BubbleSpawnInterval = BubblespawnDuration;
         EnemySpawnInterval = EnemySpawnDuration;
+        ItemSpawnInterval = ItemSpawnDuration;
         
     }
 
@@ -58,7 +63,19 @@ public class ObjectSpawner : MonoBehaviour
         else
         {
             SpawnMonster();
-            EnemySpawnInterval = Random.Range(EnemySpawnDuration,EnemySpawnDuration * 2);
+            
+            EnemySpawnInterval = Random.Range(EnemySpawnDuration,EnemySpawnDuration * 1.5f);
+        }
+
+        if(ItemSpawnInterval > 0)
+        {
+            ItemSpawnInterval -= 1f * Time.deltaTime;
+        }
+        else
+        {
+            SpawnItems();
+
+            ItemSpawnInterval = Random.Range(ItemSpawnDuration, ItemSpawnDuration * 2f);
         }
     }
 
@@ -81,6 +98,17 @@ public class ObjectSpawner : MonoBehaviour
 
         // สร้างวัตถุ
         Instantiate(MonsterPrefabs[Random.Range(0,MonsterPrefabs.Count)], spawnPosition, Quaternion.identity);
+
+    }
+
+    public void SpawnItems()
+    {
+        float randomX = Random.Range(minX, maxX);
+        Vector3 spawnPosition = new Vector3(randomX, playerTransform.position.y - startY, 0f);
+
+
+        // สร้างวัตถุ
+        Instantiate(ItemPrefabs[Random.Range(0, ItemPrefabs.Count)], spawnPosition, Quaternion.identity);
 
     }
 

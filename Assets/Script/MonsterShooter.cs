@@ -5,8 +5,12 @@ public class MonsterShooter : MonoBehaviour
     public GameObject projectilePrefab; // พรีแฟบของ projectile
     public Transform firePoint; // จุดยิง projectile
     public float fireInterval = 2f; // ระยะเวลาระหว่างการยิง
+    public float MinSpeed;
+    public float MaxSpeed;
     public Animator BubbleAnimator;
+    public Animator StarfishAnimator;
     public GameObject BubbleSprite;
+    public GameObject StarfishSprite;
     private Transform playerTransform;
     private PlayerMovement player; // อ้างอิงตำแหน่งของผู้เล่น
     private Rigidbody2D rb;
@@ -29,7 +33,7 @@ public class MonsterShooter : MonoBehaviour
         player = GameObject.FindAnyObjectByType<PlayerMovement>(); // หา GameObject ที่มี Tag "Player"
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating("ShootProjectile", 1f, fireInterval); // ยิง projectile เป็นระยะ
-        moveSpeed = Random.Range(15, 20);
+        moveSpeed = Random.Range(MinSpeed, MaxSpeed);
     }
 
     private void Update()
@@ -45,6 +49,21 @@ public class MonsterShooter : MonoBehaviour
                     Death();
                     scoring.OnScoring(BaseScore);
                 }
+            }
+
+            if (transform.position.x < player.transform.position.x)
+            {
+                //moveSpeed = Mathf.Abs(moveSpeed);
+                StarfishSprite.transform.localScale = new Vector2(Mathf.Abs(StarfishSprite.transform.localScale.x), StarfishSprite.transform.localScale.y);
+            }
+            else
+            {
+                //moveSpeed = -1 * moveSpeed;
+                if (StarfishSprite.transform.localScale.x > 0)
+                {
+                    StarfishSprite.transform.localScale = new Vector2(-StarfishSprite.transform.localScale.x, StarfishSprite.transform.localScale.y);
+                }
+
             }
         }
 
@@ -64,6 +83,7 @@ public class MonsterShooter : MonoBehaviour
     {
         IsDead = true;
         BubbleAnimator.SetTrigger("OnDeath");
+        StarfishAnimator.SetTrigger("OnDeath");
         rb.gravityScale = 1;
         rb.freezeRotation = false;
         Invoke(nameof(DisableSprite), 1f);
@@ -83,6 +103,7 @@ public class MonsterShooter : MonoBehaviour
         {
             if (playerTransform.position.y < firePoint.transform.position.y)
             {
+                StarfishAnimator.SetTrigger("Attacking");
                 // สร้าง projectile
                 Debug.Log("Player is below");
                 GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);

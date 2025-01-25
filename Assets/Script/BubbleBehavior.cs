@@ -17,6 +17,7 @@ public class BubbleBehavior : MonoBehaviour
     private ObjectSpawner _objectSpawner;
     private Rigidbody2D rb;
     private PlayerMovement playerMovement;
+    private PlayerHealth playerHealth;
     private float moveSpeed;
     private float randomSize;
     private float Lifespan;
@@ -24,6 +25,7 @@ public class BubbleBehavior : MonoBehaviour
     private bool IsTouched = false;
     private Scoring scoring;
     public int BaseScore = 100;
+    public int LifeBonus = 0;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,6 +36,7 @@ public class BubbleBehavior : MonoBehaviour
         scoring = FindAnyObjectByType<Scoring>();
         rb = GetComponent<Rigidbody2D>();
        playerMovement = FindAnyObjectByType<PlayerMovement>();
+        playerHealth = FindAnyObjectByType<PlayerHealth>();
 
         if (!IsStartingBubble)
         {
@@ -71,6 +74,7 @@ public class BubbleBehavior : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 scoring.OnScoring(BaseScore);
+                playerHealth.Heal(LifeBonus);
                 BubbleDestruction();
             }
         }

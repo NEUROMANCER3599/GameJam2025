@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public bool isGrounded;
     private PlayerHealth HealthModule;
+    public GameObject JumpParticlePrefab;
+    public Transform JumpParticleSpawnPos;
 
     void Start()
     {
@@ -74,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded)
             {
-                
+                Instantiate(JumpParticlePrefab, JumpParticleSpawnPos.position, Quaternion.identity);
                 rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
             }
             

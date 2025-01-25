@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
+  HitParticlePrefab: {fileID: 3513676070670084347, guid: b97d352c7ddfa6d45a1e8570c2859328, type: 3}
 --- !u!61 &3853143936038883930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,9 +178,9 @@ Transform:
   m_GameObject: {fileID: 1688155403843239702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6744787542827196393}
   - {fileID: 3094476668492597219}
@@ -279,6 +280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a444d2bf0d561e84bac6a020463b8c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MinSpeed: 15
+  MaxSpeed: 20
   BaseScore: 500
   DolphinAnimator: {fileID: 808838243392088376}
 --- !u!61 &7253207401523379010

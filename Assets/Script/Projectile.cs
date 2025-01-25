@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 5f; // ความเร็วของ projectile
     private Transform player; // อ้างอิงตำแหน่งของผู้เล่น
     private Vector2 targetDirection; // ทิศทางเป้าหมาย
+    public GameObject HitParticlePrefab;
 
     void Start()
     {
@@ -48,7 +49,9 @@ public class Projectile : MonoBehaviour
                 playerHealth.TakeDamage(damage); // ลดค่าพลังชีวิตของผู้เล่น
             }
 
+            Instantiate(HitParticlePrefab, transform.position, Quaternion.identity);
             Destroy(gameObject); // ทำลาย projectile หลังชน
         }
+
     }
 }
