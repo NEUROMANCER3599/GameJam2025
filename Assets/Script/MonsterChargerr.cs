@@ -10,9 +10,12 @@ public class MonsterChargerr : MonoBehaviour
     private bool IsTouched = false;
     private bool IsCharging = false;
     private float detectionRange = 2;
+    private Scoring scoring;
+    public int BaseScore = 500;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        scoring = FindAnyObjectByType<Scoring>();
         player = GameObject.FindAnyObjectByType<PlayerMovement>(); // หา GameObject ที่มี Tag "Player"
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = Random.Range(15, 20);
@@ -29,6 +32,7 @@ public class MonsterChargerr : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     Death();
+                    scoring.OnScoring(BaseScore);
                 }
             }
 
@@ -147,6 +151,7 @@ public class MonsterChargerr : MonoBehaviour
             MonsterShooter monsterentity = collision.gameObject.GetComponent<MonsterShooter>();
             if (monsterentity.DeathCheck())
             {
+                scoring.OnScoring(BaseScore);
                 Death();
             }
         }
@@ -156,6 +161,7 @@ public class MonsterChargerr : MonoBehaviour
             MonsterChargerr monsterentity = collision.gameObject.GetComponent<MonsterChargerr>();
             if (monsterentity.DeathCheck())
             {
+                scoring.OnScoring(BaseScore);
                 Death();
             }
         }

@@ -22,14 +22,16 @@ public class BubbleBehavior : MonoBehaviour
     private float Lifespan;
     private float TouchedLifeSpan;
     private bool IsTouched = false;
+    private Scoring scoring;
+    public int BaseScore = 100;
 
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         circleCollider = GetComponent<CircleCollider2D>();
         _objectSpawner = FindAnyObjectByType<ObjectSpawner>();
+        scoring = FindAnyObjectByType<Scoring>();
         rb = GetComponent<Rigidbody2D>();
        playerMovement = FindAnyObjectByType<PlayerMovement>();
 
@@ -68,7 +70,7 @@ public class BubbleBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
             {
-                
+                scoring.OnScoring(BaseScore);
                 BubbleDestruction();
             }
         }

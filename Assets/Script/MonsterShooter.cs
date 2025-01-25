@@ -15,8 +15,11 @@ public class MonsterShooter : MonoBehaviour
     private float moveSpeed;
     private bool IsDead = false;
     private bool IsTouched = false;
+    private Scoring scoring;
+    public int BaseScore = 500;
     void Start()
     {
+        scoring = FindAnyObjectByType<Scoring>();
         player = GameObject.FindAnyObjectByType<PlayerMovement>(); // หา GameObject ที่มี Tag "Player"
         rb = GetComponent<Rigidbody2D>();
         InvokeRepeating("ShootProjectile", 1f, fireInterval); // ยิง projectile เป็นระยะ
@@ -34,6 +37,7 @@ public class MonsterShooter : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     Death();
+                    scoring.OnScoring(BaseScore);
                 }
             }
         }
@@ -111,6 +115,7 @@ public class MonsterShooter : MonoBehaviour
             MonsterShooter monsterentity = collision.gameObject.GetComponent<MonsterShooter>();
             if (monsterentity.DeathCheck())
             {
+                scoring.OnScoring(BaseScore);
                 Death();
             }
         }
@@ -120,6 +125,7 @@ public class MonsterShooter : MonoBehaviour
             MonsterChargerr monsterentity = collision.gameObject.GetComponent<MonsterChargerr>();
             if (monsterentity.DeathCheck())
             {
+                scoring.OnScoring(BaseScore);
                 Death();
             }
         }
