@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3998993731794164196}
   - component: {fileID: 6604459722311171903}
   - component: {fileID: 7797313374210764456}
+  - component: {fileID: 3373323891446843037}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -123,6 +124,21 @@ MonoBehaviour:
   speed: 5
   JumpForce: 10
   GroundCheckTag: Ground
+  PlayerSprite: {fileID: 0}
+  rb: {fileID: 0}
+--- !u!114 &3373323891446843037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2689811913751979789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab70085274def24192c2f8e6fe824d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
 --- !u!1 &5543384153927586292
 GameObject:
   m_ObjectHideFlags: 0
