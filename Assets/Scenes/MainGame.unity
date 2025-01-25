@@ -214,7 +214,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5543384153927586292, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827177712}
+    - targetCorrespondingSourceObject: {fileID: 5543384153927586292, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827177711}
   m_SourcePrefab: {fileID: 100100000, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
 --- !u!212 &723859397 stripped
 SpriteRenderer:
@@ -338,6 +344,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6131652174420801623, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
   m_PrefabInstance: {fileID: 662015384}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1827177708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5543384153927586292, guid: 43cd6b322f7c42f419dbe203c5fb946b, type: 3}
+  m_PrefabInstance: {fileID: 662015384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827177711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827177708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efe0b9fed103ef4fabf083b6e2134c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 1827177712}
+  flashKey: 282
+--- !u!114 &1827177712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827177708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b611181638f0ca84491ff63c115e0aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 55d7e1399247d004b977f6703e186f6b, type: 2}
+  duration: 0.1
+  flashCount: 5
 --- !u!61 &2107019356 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3167240755207008212, guid: 4f6ee9bcec964c341944d3890d708782, type: 3}
