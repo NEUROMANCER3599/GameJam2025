@@ -1513,6 +1513,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7948000064574052913, guid: 44021176e7a33e14ea0628731570745b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1196819858}
+    - targetCorrespondingSourceObject: {fileID: 7948000064574052913, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1196819863}
+    - targetCorrespondingSourceObject: {fileID: 7948000064574052913, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1196819862}
   m_SourcePrefab: {fileID: 100100000, guid: 44021176e7a33e14ea0628731570745b, type: 3}
 --- !u!1 &1196819856 stripped
 GameObject:
@@ -1587,6 +1593,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1196819862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196819856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b611181638f0ca84491ff63c115e0aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 55d7e1399247d004b977f6703e186f6b, type: 2}
+  duration: 0.5
+  flashCount: 5
+--- !u!114 &1196819863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196819856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3c6a6220c5cb247a1397e729914c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHP: 0
+  flashEffect: {fileID: 1196819862}
 --- !u!1 &1215776311
 GameObject:
   m_ObjectHideFlags: 0
