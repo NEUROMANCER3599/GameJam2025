@@ -74,14 +74,14 @@ public class MonsterShooter : MonoBehaviour
             GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
             // คำนวณทิศทางไปยังผู้เล่น
-            Vector2 direction = (player.transform.position - firePoint.position).normalized;
+         /*   Vector2 direction = (player.transform.position - firePoint.position).normalized;
 
             // เพิ่ม Rigidbody2D ให้ projectile
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.linearVelocity = direction * projectileSpeed; // กำหนดความเร็วและทิศทางของ projectile
-            }
+            }*/
         }
         // สร้าง projectile
        
