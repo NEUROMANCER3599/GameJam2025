@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 29203241021532173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.008, y: 0.51, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -200,10 +200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3261265783735405239, guid: 572e46fec42dd9441b252f3c96d8a137, type: 3}
   firePoint: {fileID: 4256759814477584476}
-  fireInterval: 2
-  projectileSpeed: 5
+  fireInterval: 1
   BubbleAnimator: {fileID: 7559814195780008466}
   BubbleSprite: {fileID: 8024079876036527697}
+  BaseScore: 500
 --- !u!1 &8024079876036527697
 GameObject:
   m_ObjectHideFlags: 0

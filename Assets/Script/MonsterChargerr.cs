@@ -9,9 +9,10 @@ public class MonsterChargerr : MonoBehaviour
     private bool IsDead = false;
     private bool IsTouched = false;
     private bool IsCharging = false;
-    private float detectionRange = 2;
+    
     private Scoring scoring;
     public int BaseScore = 500;
+    public Animator DolphinAnimator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -74,7 +75,7 @@ public class MonsterChargerr : MonoBehaviour
 
     void ChargePlayer()
     {
-
+        DolphinAnimator.SetTrigger("OnAttack");
         IsCharging = true;
         if(transform.position.x < player.transform.position.x)
         {

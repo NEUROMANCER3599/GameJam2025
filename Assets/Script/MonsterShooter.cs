@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class MonsterShooter : MonoBehaviour
@@ -6,10 +5,9 @@ public class MonsterShooter : MonoBehaviour
     public GameObject projectilePrefab; // พรีแฟบของ projectile
     public Transform firePoint; // จุดยิง projectile
     public float fireInterval = 2f; // ระยะเวลาระหว่างการยิง
-    public float projectileSpeed = 5f; // ความเร็วของ projectile
     public Animator BubbleAnimator;
     public GameObject BubbleSprite;
-
+    private Transform playerTransform;
     private PlayerMovement player; // อ้างอิงตำแหน่งของผู้เล่น
     private Rigidbody2D rb;
     private float moveSpeed;
@@ -19,6 +17,14 @@ public class MonsterShooter : MonoBehaviour
     public int BaseScore = 500;
     void Start()
     {
+        // หา player โดยใช้ Tag "Player"
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            playerTransform = playerObject.transform;
+        }
+
+
         scoring = FindAnyObjectByType<Scoring>();
         player = GameObject.FindAnyObjectByType<PlayerMovement>(); // หา GameObject ที่มี Tag "Player"
         rb = GetComponent<Rigidbody2D>();
@@ -41,7 +47,7 @@ public class MonsterShooter : MonoBehaviour
                 }
             }
         }
-        
+
     }
 
     void Movement()
@@ -51,7 +57,7 @@ public class MonsterShooter : MonoBehaviour
             rb.gravityScale = 0; // ปิดแรงโน้มถ่วง
             rb.linearVelocity = new Vector2(0, moveSpeed); // กำหนดให้วัตถุเลื่อนขึ้นในแนว Y
         }
-       
+
     }
 
     void Death()
@@ -75,20 +81,15 @@ public class MonsterShooter : MonoBehaviour
 
         if (!IsDead)
         {
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
-
-            // คำนวณทิศทางไปยังผู้เล่น
-         /*   Vector2 direction = (player.transform.position - firePoint.position).normalized;
-
-            // เพิ่ม Rigidbody2D ให้ projectile
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (playerTransform.position.y < firePoint.transform.position.y)
             {
-                rb.linearVelocity = direction * projectileSpeed; // กำหนดความเร็วและทิศทางของ projectile
-            }*/
+                // สร้าง projectile
+                Debug.Log("Player is below");
+                GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+            }
+
         }
-        // สร้าง projectile
-       
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

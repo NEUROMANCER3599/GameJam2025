@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 023888a91aae97e41a028ec170d08e94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -515256733607828355
+    second: player_onair_jump_ground_0
+  - first:
+      213: 5012084806684632788
+    second: player_onair_jump_ground_1
+  - first:
+      213: -2250201979232657883
+    second: player_onair_jump_ground_2
+  - first:
+      213: 624103397845986621
+    second: player_onair_jump_ground_3
+  - first:
+      213: 9196315586809033040
+    second: player_onair_jump_ground_4
+  - first:
+      213: 8481357657159630831
+    second: player_onair_jump_ground_5
+  - first:
+      213: -3521138069189731944
+    second: player_onair_jump_ground_6
+  - first:
+      213: -2414438104730347298
+    second: player_onair_jump_ground_7
+  - first:
+      213: 7188021502290046255
+    second: player_onair_jump_ground_8
+  - first:
+      213: -4190706787668336652
+    second: player_onair_jump_ground_9
+  - first:
+      213: 3697427481031871103
+    second: player_onair_jump_ground_10
+  - first:
+      213: 6669285305633600321
+    second: player_onair_jump_ground_11
+  - first:
+      213: -3132959612478629333
+    second: player_onair_jump_ground_12
+  - first:
+      213: 8085408866203703640
+    second: player_onair_jump_ground_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_onair_jump_ground_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 582
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d746d211bb079d8f0800000000000000
+      internalID: -515256733607828355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_1
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 522
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6e19693908e8540800000000000000
+      internalID: 5012084806684632788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_2
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 0
+        width: 522
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ed4f2d83da5c0e0800000000000000
+      internalID: -2250201979232657883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_3
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 0
+        width: 522
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d69b3dbb249a800800000000000000
+      internalID: 624103397845986621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_4
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 0
+        width: 522
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f3225d40ef9f70800000000000000
+      internalID: 9196315586809033040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_5
+      rect:
+        serializedVersion: 2
+        x: 3279
+        y: 119
+        width: 522
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feff9006ad5d3b570800000000000000
+      internalID: 8481357657159630831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_6
+      rect:
+        serializedVersion: 2
+        x: 3919
+        y: 159
+        width: 522
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89957d4f497622fc0800000000000000
+      internalID: -3521138069189731944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_7
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 219
+        width: 522
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8516306513e7ed0800000000000000
+      internalID: -2414438104730347298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_8
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 259
+        width: 582
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d2ed9f87bf0c360800000000000000
+      internalID: 7188021502290046255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_9
+      rect:
+        serializedVersion: 2
+        x: 5759
+        y: 99
+        width: 642
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffd533416e97d5c0800000000000000
+      internalID: -4190706787668336652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_10
+      rect:
+        serializedVersion: 2
+        x: 6419
+        y: 0
+        width: 582
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a0ca544b6ef4330800000000000000
+      internalID: 3697427481031871103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_11
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 0
+        width: 522
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143f50c66af0e8c50800000000000000
+      internalID: 6669285305633600321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_12
+      rect:
+        serializedVersion: 2
+        x: 7759
+        y: 0
+        width: 522
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ad092e4dd7584d0800000000000000
+      internalID: -3132959612478629333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_onair_jump_ground_13
+      rect:
+        serializedVersion: 2
+        x: 8399
+        y: 0
+        width: 522
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8599dd58684253070800000000000000
+      internalID: 8085408866203703640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

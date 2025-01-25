@@ -126,6 +126,7 @@ MonoBehaviour:
   JumpForce: 10
   GroundCheckTag: Ground
   PlayerSprite: {fileID: 6218187688271554125}
+  PlayerAnimator: {fileID: 4026040318372549986}
   rb: {fileID: 0}
 --- !u!114 &3373323891446843037
 MonoBehaviour:

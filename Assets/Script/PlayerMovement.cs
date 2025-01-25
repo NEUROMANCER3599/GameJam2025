@@ -9,20 +9,33 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Components")]
     public SpriteRenderer PlayerSprite;
+    public Animator PlayerAnimator;
     public Rigidbody2D rb;
     private bool isGrounded;
+    private PlayerHealth HealthModule;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        HealthModule = GetComponent<PlayerHealth>();
     }
 
     void Update()
     {
-        
 
-        Movement();
-        Jumping();
+        
+        if (!HealthModule.PlayerDeathCheck())
+        {
+            PlayerAnimator.SetBool("IsJumped", !isGrounded);
+            Movement();
+            Jumping();
+        }
+        else
+        {
+            rb.freezeRotation = false;
+            PlayerAnimator.SetBool("IsDead", true);
+        }
+        
     }
 
     void FixedUpdate()
@@ -50,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerSprite.flipX = false;
         }
+
+        PlayerAnimator.SetFloat("PlayerYVelocity",rb.linearVelocityY);
     }
 
     void Jumping()
@@ -85,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.tag == GroundCheckTag)
         {
             isGrounded = true;
-
+            
         }
     }
 
@@ -94,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == GroundCheckTag)
         {
             isGrounded = false;
+            
         }
     }
     

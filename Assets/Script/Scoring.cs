@@ -32,6 +32,6 @@ public class Scoring : MonoBehaviour
         Combo++;
         ComboInterval = ComboDuration;
 
-        Debug.Log("Current Score :" + Score + " | Current Combo :" + Combo);
+        //Debug.Log("Current Score :" + Score + " | Current Combo :" + Combo);
     }
 }

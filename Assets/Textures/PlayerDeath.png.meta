@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: deee9fb809f35ed42a5b2f734ab903ea
+guid: 66da62d113b4de0489ae7db6f718f90d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4924179877203080087
-    second: enemy_dolphin_0
+      213: -149330201202111071
+    second: PlayerDeath_0
   - first:
-      213: 4758988564155147703
-    second: enemy_dolphin_1
+      213: -6384727529579894352
+    second: PlayerDeath_1
   - first:
-      213: 5605899563525020033
-    second: enemy_dolphin_2
+      213: 6615485487499488328
+    second: PlayerDeath_2
   - first:
-      213: 5944841889305864010
-    second: enemy_dolphin_3
+      213: -198236570846542600
+    second: PlayerDeath_3
+  - first:
+      213: -3484549633506874533
+    second: PlayerDeath_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,89 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_dolphin_0
+      name: PlayerDeath_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 79
         y: 0
-        width: 480
-        height: 480
+        width: 522
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4498b23cf3682bb458249b07152caf90
-      internalID: -1696477933
+      spriteID: 1ad4c1329f87dedf0800000000000000
+      internalID: -149330201202111071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_dolphin_1
+      name: PlayerDeath_1
       rect:
         serializedVersion: 2
-        x: 480
+        x: 719
         y: 0
-        width: 480
-        height: 480
+        width: 522
+        height: 581
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4fa972a76a42f664e9c1093aacd95ab7
-      internalID: 1049242814
+      spriteID: 0b9abbbb324e467a0800000000000000
+      internalID: -6384727529579894352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_dolphin_2
+      name: PlayerDeath_2
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1359
         y: 0
-        width: 480
-        height: 480
+        width: 542
+        height: 621
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c2981699746cc9d41abfa01176394a96
-      internalID: 2096260065
+      spriteID: 84ca823200deecb50800000000000000
+      internalID: 6615485487499488328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_dolphin_3
+      name: PlayerDeath_3
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 2019
         y: 0
-        width: 480
-        height: 480
+        width: 542
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f4f78df041378124d9f5840929197b96
-      internalID: -512332628
+      spriteID: 8f4433d93e8bf3df0800000000000000
+      internalID: -198236570846542600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerDeath_4
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 0
+        width: 541
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bea9cf19464afc0800000000000000
+      internalID: -3484549633506874533
       vertices: []
       indices: 
       edges: []
@@ -200,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3dd2fbc412357214d94a4397994998b1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -209,11 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      enemy_dolphin_0: -1696477933
-      enemy_dolphin_1: 1049242814
-      enemy_dolphin_2: 2096260065
-      enemy_dolphin_3: -512332628
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
