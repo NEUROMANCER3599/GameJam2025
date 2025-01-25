@@ -21,13 +21,10 @@ public class MonsterChargerr : MonoBehaviour
     private void Update()
     {
        
-
-        
-
         if (!IsDead)
         {
             ScanningPlayer();
-            if (IsTouched && !IsCharging)
+            if (IsTouched)
             {
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
                 {
@@ -35,14 +32,9 @@ public class MonsterChargerr : MonoBehaviour
                 }
             }
 
-            if (IsCharging)
-            {
-                ChargePlayer();
-            }
-            else
-            {
-                Movement();
-            }
+           
+            Movement();
+            
         }
 
        
@@ -50,43 +42,69 @@ public class MonsterChargerr : MonoBehaviour
 
     void ScanningPlayer()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-        if (distanceToPlayer <= detectionRange)
+        if (!IsCharging)
         {
-            IsCharging = true;
+            if(transform.position.y > player.transform.position.y)
+            {
+                ChargePlayer();
+            }
+            
+            if (transform.position.x < player.transform.position.x)
+            {
+                //moveSpeed = Mathf.Abs(moveSpeed);
+                transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
+            }
+            else 
+            {
+                //moveSpeed = -1 * moveSpeed;
+                if(transform.localScale.x > 0)
+                {
+                    transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+                }
+                
+            }
+            
         }
+        
     }
 
     void ChargePlayer()
     {
-        
-        //Vector2 direction = (player.transform.position - transform.position).normalized;
-        //rb.gravityScale = 0;
+
+        IsCharging = true;
         if(transform.position.x < player.transform.position.x)
         {
-            rb.linearVelocity = new Vector2(moveSpeed * 1.5f, 0);
+            moveSpeed = Mathf.Abs(moveSpeed);
+            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
         else if(transform.position.x > player.transform.position.x)
         {
-            rb.linearVelocity = new Vector2(-moveSpeed * 1.5f, 0);
+            moveSpeed = -1 * moveSpeed;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
         
     }
 
     void Movement()
     {
-        if (!IsDead && !IsCharging)
+        if (!IsCharging)
         {
-            rb.gravityScale = 0; 
+            //rb.gravityScale = 0; 
             rb.linearVelocity = new Vector2(0, moveSpeed); 
         }
+        else
+        {
+            //rb.gravityScale = 0;
+            rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocityY + Random.Range(-0.5f,0.15f));
+        }
+
 
     }
 
     void Death()
     {
         IsDead = true;
-        rb.gravityScale = 1;
+        rb.gravityScale = 2;
         rb.freezeRotation = false;
 
 
@@ -111,6 +129,19 @@ public class MonsterChargerr : MonoBehaviour
             }
 
         }
+
+        /*
+        if (collision.gameObject.GetComponent<PlayerHealth>())
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (!IsCharging)
+            {
+                playerHealth.TakeDamage(1);
+            }
+           
+        }
+        */
+
         if (collision.gameObject.GetComponent<MonsterShooter>())
         {
             MonsterShooter monsterentity = collision.gameObject.GetComponent<MonsterShooter>();

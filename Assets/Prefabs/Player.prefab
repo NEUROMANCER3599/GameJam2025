@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6604459722311171903}
   - component: {fileID: 7797313374210764456}
   - component: {fileID: 3373323891446843037}
+  - component: {fileID: 7807305237415415675}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -124,7 +125,7 @@ MonoBehaviour:
   speed: 5
   JumpForce: 10
   GroundCheckTag: Ground
-  PlayerSprite: {fileID: 0}
+  PlayerSprite: {fileID: 6218187688271554125}
   rb: {fileID: 0}
 --- !u!114 &3373323891446843037
 MonoBehaviour:
@@ -138,7 +139,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab70085274def24192c2f8e6fe824d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashEffect: {fileID: 5233075636730285941}
   maxHealth: 3
+  flashCooldown: 0.5
+--- !u!114 &7807305237415415675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2689811913751979789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff191815ffe0504db593592cd3acfca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityThreshold: 0
+  duration: 2
+  mainCamera: {fileID: 0}
 --- !u!1 &5543384153927586292
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +168,7 @@ GameObject:
   - component: {fileID: 3425359314392308006}
   - component: {fileID: 6218187688271554125}
   - component: {fileID: 4026040318372549986}
+  - component: {fileID: 5233075636730285941}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -249,3 +268,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5233075636730285941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5543384153927586292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b611181638f0ca84491ff63c115e0aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 55d7e1399247d004b977f6703e186f6b, type: 2}
+  duration: 0.1
+  flashCount: 5
