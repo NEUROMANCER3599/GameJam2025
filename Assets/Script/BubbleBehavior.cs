@@ -1,6 +1,6 @@
-using UnityEditor.Rendering;
+
 using UnityEngine;
-using System.Collections;
+
 public class BubbleBehavior : MonoBehaviour
 {
     [Header("Customization Parameters")]
