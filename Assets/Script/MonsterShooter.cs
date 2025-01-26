@@ -87,6 +87,7 @@ public class MonsterShooter : MonoBehaviour
         if (!IsDead)
         {
             IsDead = true;
+            gameObject.layer = 13;
             Instantiate(DeathSound, transform.position, Quaternion.identity);
             BubbleAnimator.SetTrigger("OnDeath");
             StarfishAnimator.SetTrigger("OnDeath");

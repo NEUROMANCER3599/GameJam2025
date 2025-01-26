@@ -15,7 +15,7 @@ public class PlayerJumpThrough : MonoBehaviour
     void Update()
     {
         // ตรวจสอบการกระโดดขึ้น (จากด้านล่าง)
-        if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y < 0) // กระโดดจากด้านล่าง
+        if (Input.GetKeyDown(KeyCode.Space) && rb.linearVelocity.y < 0) // กระโดดจากด้านล่าง
         {
             canJumpThrough = true;
         }

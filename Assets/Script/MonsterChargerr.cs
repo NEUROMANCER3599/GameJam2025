@@ -117,6 +117,7 @@ public class MonsterChargerr : MonoBehaviour
         {
             
             IsDead = true;
+            gameObject.layer = 13;
             Instantiate(DeathSound, transform.position, Quaternion.identity);
             rb.gravityScale = 2;
             rb.freezeRotation = false;

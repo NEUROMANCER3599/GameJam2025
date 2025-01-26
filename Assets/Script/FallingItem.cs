@@ -123,6 +123,19 @@ public class FallingItem : MonoBehaviour
             }
         }
 
+        if (collision.gameObject.GetComponent<BossHealth>())
+        {
+            if (IsPopped && !collision.gameObject.GetComponent<BossHealth>().DeathCheck())
+            {
+                Instantiate(HitParticlePrefab, transform.position, Quaternion.identity);
+                Instantiate(HitSound, transform.position, Quaternion.identity);
+                if (DestroyItemOnHit)
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
+
         if (collision.gameObject.GetComponent<BubbleBehavior>())
         {
             if (IsPopped)
