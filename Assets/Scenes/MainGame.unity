@@ -2243,6 +2243,7 @@ MonoBehaviour:
   - {fileID: 4937009930337502137, guid: b78eae1f72858a1408793efb4ade1d05, type: 3}
   - {fileID: 1688155403843239702, guid: f12df346996681741adf104cf4e708b9, type: 3}
   - {fileID: 7552517867992578044, guid: b64fa16a0867e1b4194d10b5a7a0cff3, type: 3}
+  - {fileID: 4937009930337502137, guid: 9314bc0dbadc90a47b41f9bddeb09121, type: 3}
   ItemPrefabs:
   - {fileID: 6152504327885437442, guid: 4cf1bf59d1fe6ec4c85cdafe8c4c9de7, type: 3}
   - {fileID: 7552517867992578044, guid: c81a24ff9556cfe4ca826e8df2fc070a, type: 3}
