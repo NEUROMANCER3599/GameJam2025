@@ -34,7 +34,7 @@ public class BossHealth : MonoBehaviour
     void Die()
     {
         IsDead = true;
-        bossSystem.enabled = false;
+       // bossSystem.enabled = false;
 
     }
 

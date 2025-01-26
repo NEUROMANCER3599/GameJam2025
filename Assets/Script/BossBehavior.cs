@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class BossBehavior : MonoBehaviour
 {
+    [Header("System")]
+    private Vector2 velocity = Vector2.zero; // ใช้เก็บความเร็วในการเคลื่อนที่แบบสมูท
+    private float randomXOffset; // ค่า offset ในแกน X สำหรับการสุ่ม
+    private float timeSinceLastMove = 0f; // ตัวจับเวลาสำหรับการเปลี่ยนตำแหน่งสุ่ม
+    private BossHealth _bossHealth;
+    [Header("Movement")]
     public Transform player; // ตำแหน่งของผู้เล่น
     public float followSpeed = 2f; // ความเร็วของบอส
     public float smoothTime = 0.3f; // ระยะเวลาที่ใช้ในการเคลื่อนที่ให้สมูท
@@ -10,9 +16,7 @@ public class BossBehavior : MonoBehaviour
     public float moveRange = 2f; // ระยะที่บอสสามารถขยับซ้าย-ขวา
     public float minX = -4f; // ขอบเขตซ้ายสุด
     public float maxX = 4f;  // ขอบเขตขวาสุด
-    private Vector2 velocity = Vector2.zero; // ใช้เก็บความเร็วในการเคลื่อนที่แบบสมูท
-    private float randomXOffset; // ค่า offset ในแกน X สำหรับการสุ่ม
-    private float timeSinceLastMove = 0f; // ตัวจับเวลาสำหรับการเปลี่ยนตำแหน่งสุ่ม
+   
 
     [Header("Skill Settings")]
     public GameObject[] skills; // รายการของสกิลที่บอสสามารถ Spawn ได้
@@ -22,6 +26,7 @@ public class BossBehavior : MonoBehaviour
     private float timeSinceLastSkill = 0f; // ตัวจับเวลาสำหรับการใช้งานสกิลล่าสุด
     private void Start()
     {
+        _bossHealth = GetComponent<BossHealth>();
         // กำหนดค่าเริ่มต้นแบบสุ่มในแกน X
         randomXOffset = Random.Range(-moveRange, moveRange);
 
@@ -46,8 +51,13 @@ public class BossBehavior : MonoBehaviour
         timeSinceLastMove += Time.deltaTime;
         skillTimer += Time.deltaTime;
         timeSinceLastSkill += Time.deltaTime;
-        
-        
+
+        if (_bossHealth.DeathCheck() != false)
+        {
+            randomMoveInterval = 999;
+            cooldownTime = 999;
+        }
+      
         // หากถึงเวลาที่ต้องเปลี่ยนตำแหน่งแกน X
         if (timeSinceLastMove >= randomMoveInterval)
         {
@@ -57,7 +67,6 @@ public class BossBehavior : MonoBehaviour
 
         // ตำแหน่งปัจจุบันของบอส
         Vector2 currentPosition = transform.position;
-        
         // คำนวณตำแหน่งเป้าหมายในแกน X
         float targetX = Mathf.Clamp(/*player.position.x + */randomXOffset, minX, maxX); // จำกัดค่าที่ -4 ถึง 4
         
