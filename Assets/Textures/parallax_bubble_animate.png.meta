@@ -1,0 +1,2642 @@
+fileFormatVersion: 2
+guid: d625a88ec327ad74488b85ece7ca3f02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6697939342017581197
+    second: parallax_bubble_animate_0
+  - first:
+      213: 6565165382402135627
+    second: parallax_bubble_animate_1
+  - first:
+      213: 184864441748622564
+    second: parallax_bubble_animate_2
+  - first:
+      213: 3206145291191141646
+    second: parallax_bubble_animate_3
+  - first:
+      213: 5114475031256873806
+    second: parallax_bubble_animate_4
+  - first:
+      213: 331559469370860467
+    second: parallax_bubble_animate_5
+  - first:
+      213: 1756892254910706898
+    second: parallax_bubble_animate_6
+  - first:
+      213: 1950513460996032095
+    second: parallax_bubble_animate_7
+  - first:
+      213: -7328146450277484455
+    second: parallax_bubble_animate_8
+  - first:
+      213: -6938755171402926982
+    second: parallax_bubble_animate_9
+  - first:
+      213: 7489211396252434877
+    second: parallax_bubble_animate_10
+  - first:
+      213: 7887566949850332478
+    second: parallax_bubble_animate_11
+  - first:
+      213: 2979500339121915675
+    second: parallax_bubble_animate_12
+  - first:
+      213: -8993220957528538164
+    second: parallax_bubble_animate_13
+  - first:
+      213: -5393143545097299643
+    second: parallax_bubble_animate_14
+  - first:
+      213: -5261560020293360133
+    second: parallax_bubble_animate_15
+  - first:
+      213: 4546127998768422002
+    second: parallax_bubble_animate_16
+  - first:
+      213: -5397464263110036708
+    second: parallax_bubble_animate_17
+  - first:
+      213: -8712923105300228932
+    second: parallax_bubble_animate_18
+  - first:
+      213: 6904509837735341340
+    second: parallax_bubble_animate_19
+  - first:
+      213: 6121220187133116109
+    second: parallax_bubble_animate_20
+  - first:
+      213: -3107166029727774658
+    second: parallax_bubble_animate_21
+  - first:
+      213: -2315651521250162209
+    second: parallax_bubble_animate_22
+  - first:
+      213: 4815780053535078687
+    second: parallax_bubble_animate_23
+  - first:
+      213: 5828342137732085880
+    second: parallax_bubble_animate_24
+  - first:
+      213: -598200561828655757
+    second: parallax_bubble_animate_25
+  - first:
+      213: -7226609672174959610
+    second: parallax_bubble_animate_26
+  - first:
+      213: -9091563029156348433
+    second: parallax_bubble_animate_27
+  - first:
+      213: 5704193967905190145
+    second: parallax_bubble_animate_28
+  - first:
+      213: -4534435612502590893
+    second: parallax_bubble_animate_29
+  - first:
+      213: 4312350908917299554
+    second: parallax_bubble_animate_30
+  - first:
+      213: 830307118787468364
+    second: parallax_bubble_animate_31
+  - first:
+      213: 1350057889631737987
+    second: parallax_bubble_animate_32
+  - first:
+      213: -805369979449818209
+    second: parallax_bubble_animate_33
+  - first:
+      213: 347330938053173471
+    second: parallax_bubble_animate_34
+  - first:
+      213: 8729964907145954826
+    second: parallax_bubble_animate_35
+  - first:
+      213: -1648059934784363239
+    second: parallax_bubble_animate_36
+  - first:
+      213: 6726331237080891582
+    second: parallax_bubble_animate_37
+  - first:
+      213: -3356455086229516797
+    second: parallax_bubble_animate_38
+  - first:
+      213: -2349551609085989201
+    second: parallax_bubble_animate_39
+  - first:
+      213: -2238233099987650871
+    second: parallax_bubble_animate_40
+  - first:
+      213: 8848111548825061993
+    second: parallax_bubble_animate_41
+  - first:
+      213: 3374216206097436103
+    second: parallax_bubble_animate_42
+  - first:
+      213: -8959340265427756319
+    second: parallax_bubble_animate_43
+  - first:
+      213: -961622533423764391
+    second: parallax_bubble_animate_44
+  - first:
+      213: -1256688090280612717
+    second: parallax_bubble_animate_45
+  - first:
+      213: 526636963952583053
+    second: parallax_bubble_animate_46
+  - first:
+      213: 3674109022074320646
+    second: parallax_bubble_animate_47
+  - first:
+      213: 4819387112822959402
+    second: parallax_bubble_animate_48
+  - first:
+      213: -1333280841403993087
+    second: parallax_bubble_animate_49
+  - first:
+      213: 6208137096251914567
+    second: parallax_bubble_animate_50
+  - first:
+      213: 8112769624267154763
+    second: parallax_bubble_animate_51
+  - first:
+      213: -7647317462201878045
+    second: parallax_bubble_animate_52
+  - first:
+      213: 8134747896441097484
+    second: parallax_bubble_animate_53
+  - first:
+      213: 3841910336273309546
+    second: parallax_bubble_animate_54
+  - first:
+      213: -8982948001390235260
+    second: parallax_bubble_animate_55
+  - first:
+      213: 7502884243640040047
+    second: parallax_bubble_animate_56
+  - first:
+      213: 3959968804689317885
+    second: parallax_bubble_animate_57
+  - first:
+      213: -1069342220882246101
+    second: parallax_bubble_animate_58
+  - first:
+      213: 5733997092214812897
+    second: parallax_bubble_animate_59
+  - first:
+      213: -943450288042773141
+    second: parallax_bubble_animate_60
+  - first:
+      213: 5978613873985044079
+    second: parallax_bubble_animate_61
+  - first:
+      213: 1789565907148531100
+    second: parallax_bubble_animate_62
+  - first:
+      213: -6320871161270098426
+    second: parallax_bubble_animate_63
+  - first:
+      213: 2931545654897508999
+    second: parallax_bubble_animate_64
+  - first:
+      213: 8063269318274736355
+    second: parallax_bubble_animate_65
+  - first:
+      213: -8694471717461942251
+    second: parallax_bubble_animate_66
+  - first:
+      213: -4904159254806447192
+    second: parallax_bubble_animate_67
+  - first:
+      213: -3061512240379745582
+    second: parallax_bubble_animate_68
+  - first:
+      213: 1643277530964784279
+    second: parallax_bubble_animate_69
+  - first:
+      213: 5757841974732745819
+    second: parallax_bubble_animate_70
+  - first:
+      213: 7412111505093698241
+    second: parallax_bubble_animate_71
+  - first:
+      213: 515419606222252976
+    second: parallax_bubble_animate_72
+  - first:
+      213: 899374353633911584
+    second: parallax_bubble_animate_73
+  - first:
+      213: -2166214751097988900
+    second: parallax_bubble_animate_74
+  - first:
+      213: 3970695838291145220
+    second: parallax_bubble_animate_75
+  - first:
+      213: -835943633358818231
+    second: parallax_bubble_animate_76
+  - first:
+      213: -942588733568310765
+    second: parallax_bubble_animate_77
+  - first:
+      213: -7681480372284931206
+    second: parallax_bubble_animate_78
+  - first:
+      213: 4539472805503634670
+    second: parallax_bubble_animate_79
+  - first:
+      213: -3595331172395878264
+    second: parallax_bubble_animate_80
+  - first:
+      213: -1739103129730509802
+    second: parallax_bubble_animate_81
+  - first:
+      213: 1453791714147259554
+    second: parallax_bubble_animate_82
+  - first:
+      213: 2896573024088443826
+    second: parallax_bubble_animate_83
+  - first:
+      213: 4668275801401374841
+    second: parallax_bubble_animate_84
+  - first:
+      213: 3493184677571821451
+    second: parallax_bubble_animate_85
+  - first:
+      213: -1949344285689027740
+    second: parallax_bubble_animate_86
+  - first:
+      213: 8408706905369494689
+    second: parallax_bubble_animate_87
+  - first:
+      213: 4240835167342496840
+    second: parallax_bubble_animate_88
+  - first:
+      213: 2924676536590312237
+    second: parallax_bubble_animate_89
+  - first:
+      213: 5557712981612022544
+    second: parallax_bubble_animate_90
+  - first:
+      213: -1139876312352715250
+    second: parallax_bubble_animate_91
+  - first:
+      213: -3906534468695956502
+    second: parallax_bubble_animate_92
+  - first:
+      213: -3138415404254820745
+    second: parallax_bubble_animate_93
+  - first:
+      213: -54798576486369757
+    second: parallax_bubble_animate_94
+  - first:
+      213: 8863489321559447037
+    second: parallax_bubble_animate_95
+  - first:
+      213: 2353823219430120253
+    second: parallax_bubble_animate_96
+  - first:
+      213: 2152387853204219895
+    second: parallax_bubble_animate_97
+  - first:
+      213: 6394823476933503935
+    second: parallax_bubble_animate_98
+  - first:
+      213: 4226360408713221270
+    second: parallax_bubble_animate_99
+  - first:
+      213: -7382484094926993851
+    second: parallax_bubble_animate_100
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: parallax_bubble_animate_0
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 3199
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fade7d7a32c03a0800000000000000
+      internalID: -6697939342017581197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_1
+      rect:
+        serializedVersion: 2
+        x: 6679
+        y: 3239
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4655cda1272c1b50800000000000000
+      internalID: 6565165382402135627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_2
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 3169
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec0706fa35c09200800000000000000
+      internalID: 184864441748622564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_3
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 2949
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e054dbbc7248e7c20800000000000000
+      internalID: 3206145291191141646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_4
+      rect:
+        serializedVersion: 2
+        x: 4419
+        y: 2929
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bbbaa71f34af640800000000000000
+      internalID: 5114475031256873806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_5
+      rect:
+        serializedVersion: 2
+        x: 4469
+        y: 2829
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b364c9a49fe99400800000000000000
+      internalID: 331559469370860467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_6
+      rect:
+        serializedVersion: 2
+        x: 6599
+        y: 2839
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4769a823cb16810800000000000000
+      internalID: 1756892254910706898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_7
+      rect:
+        serializedVersion: 2
+        x: 6679
+        y: 2739
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56494498ad911b10800000000000000
+      internalID: 1950513460996032095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_8
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 2699
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958bb2131a13d4a90800000000000000
+      internalID: -7328146450277484455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_9
+      rect:
+        serializedVersion: 2
+        x: 6559
+        y: 2699
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74bf194fe694bf90800000000000000
+      internalID: -6938755171402926982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_10
+      rect:
+        serializedVersion: 2
+        x: 4459
+        y: 2649
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db10f69d5160fe760800000000000000
+      internalID: 7489211396252434877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_11
+      rect:
+        serializedVersion: 2
+        x: 6539
+        y: 2619
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3db0fbc954467d60800000000000000
+      internalID: 7887566949850332478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_12
+      rect:
+        serializedVersion: 2
+        x: 6559
+        y: 2619
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b178489b5cf495920800000000000000
+      internalID: 2979500339121915675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_13
+      rect:
+        serializedVersion: 2
+        x: 6659
+        y: 2619
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3c9efef29a13380800000000000000
+      internalID: -8993220957528538164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_14
+      rect:
+        serializedVersion: 2
+        x: 8659
+        y: 2599
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549d8c31584b725b0800000000000000
+      internalID: -5393143545097299643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_15
+      rect:
+        serializedVersion: 2
+        x: 6609
+        y: 2599
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5640ad90f2bf6b0800000000000000
+      internalID: -5261560020293360133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_16
+      rect:
+        serializedVersion: 2
+        x: 8689
+        y: 2549
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c9c061457171f30800000000000000
+      internalID: 4546127998768422002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_17
+      rect:
+        serializedVersion: 2
+        x: 8709
+        y: 2549
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13f57589da5815b0800000000000000
+      internalID: -5397464263110036708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_18
+      rect:
+        serializedVersion: 2
+        x: 8809
+        y: 2549
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb45949499a751780800000000000000
+      internalID: -8712923105300228932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_19
+      rect:
+        serializedVersion: 2
+        x: 8759
+        y: 2529
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1da762ad1fb1df50800000000000000
+      internalID: 6904509837735341340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_20
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1529
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcef40e1451f2f450800000000000000
+      internalID: 6121220187133116109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_21
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 1509
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e384aeb55f021e4d0800000000000000
+      internalID: -3107166029727774658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_22
+      rect:
+        serializedVersion: 2
+        x: 7949
+        y: 1469
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd98a44d5372ddfd0800000000000000
+      internalID: -2315651521250162209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_23
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1479
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19be5f817615d240800000000000000
+      internalID: 4815780053535078687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_24
+      rect:
+        serializedVersion: 2
+        x: 5709
+        y: 1449
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87836fc5b4e62e050800000000000000
+      internalID: 5828342137732085880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_25
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1459
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d83c722c3c2b7f0800000000000000
+      internalID: -598200561828655757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_26
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 1459
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6040c979acce5bb90800000000000000
+      internalID: -7226609672174959610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_27
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedbf0a189744d180800000000000000
+      internalID: -9091563029156348433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_28
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1013ae2113e592f40800000000000000
+      internalID: 5704193967905190145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_29
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1439
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35af6ebb5d27211c0800000000000000
+      internalID: -4534435612502590893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_30
+      rect:
+        serializedVersion: 2
+        x: 5929
+        y: 1439
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26939d8cd4c88db30800000000000000
+      internalID: 4312350908917299554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_31
+      rect:
+        serializedVersion: 2
+        x: 8169
+        y: 1439
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c1ec5ece7d58b00800000000000000
+      internalID: 830307118787468364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_32
+      rect:
+        serializedVersion: 2
+        x: 3469
+        y: 1379
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38896b96f7e5cb210800000000000000
+      internalID: 1350057889631737987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_33
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 1409
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93412e4540c2d4f0800000000000000
+      internalID: -805369979449818209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_34
+      rect:
+        serializedVersion: 2
+        x: 3699
+        y: 1419
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0a92ed5a7f1d400800000000000000
+      internalID: 347330938053173471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_35
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 1399
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a068f0864d0172970800000000000000
+      internalID: 8729964907145954826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_36
+      rect:
+        serializedVersion: 2
+        x: 5899
+        y: 1389
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915ef9a983ae029e0800000000000000
+      internalID: -1648059934784363239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_37
+      rect:
+        serializedVersion: 2
+        x: 8139
+        y: 1389
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb002db5f9ab85d50800000000000000
+      internalID: 6726331237080891582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_38
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1359
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8cb0e1e97b61d0800000000000000
+      internalID: -3356455086229516797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_39
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1339
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae6bfe8247b46fd0800000000000000
+      internalID: -2349551609085989201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_40
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 1359
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6f6beaad230f0e0800000000000000
+      internalID: -2238233099987650871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_41
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 1359
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96acfb8039ecaca70800000000000000
+      internalID: 8848111548825061993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_42
+      rect:
+        serializedVersion: 2
+        x: 5729
+        y: 1359
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdcdc713cf93de20800000000000000
+      internalID: 3374216206097436103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_43
+      rect:
+        serializedVersion: 2
+        x: 7959
+        y: 1349
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea13594f770aa380800000000000000
+      internalID: -8959340265427756319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_44
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1329
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ce3479661a7a2f0800000000000000
+      internalID: -961622533423764391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_45
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1309
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c2c5117d85f8ee0800000000000000
+      internalID: -1256688090280612717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_46
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1329
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81ebf9478dfe4700800000000000000
+      internalID: 526636963952583053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_47
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 1309
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6073cc670be0df230800000000000000
+      internalID: 3674109022074320646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_48
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 1309
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d68ee7b07e1e240800000000000000
+      internalID: 4819387112822959402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_49
+      rect:
+        serializedVersion: 2
+        x: 5879
+        y: 1329
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104f746832c3f7de0800000000000000
+      internalID: -1333280841403993087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_50
+      rect:
+        serializedVersion: 2
+        x: 7829
+        y: 1309
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74935030ccbb72650800000000000000
+      internalID: 6208137096251914567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_51
+      rect:
+        serializedVersion: 2
+        x: 8119
+        y: 1329
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45e50f6df8569070800000000000000
+      internalID: 8112769624267154763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_52
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9b0dc09454fd590800000000000000
+      internalID: -7647317462201878045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_53
+      rect:
+        serializedVersion: 2
+        x: 5519
+        y: 1289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d4ab0bc1e64e070800000000000000
+      internalID: 8134747896441097484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_54
+      rect:
+        serializedVersion: 2
+        x: 5879
+        y: 1289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fd8747815315530800000000000000
+      internalID: 3841910336273309546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_55
+      rect:
+        serializedVersion: 2
+        x: 7759
+        y: 1289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481745de268265380800000000000000
+      internalID: -8982948001390235260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_56
+      rect:
+        serializedVersion: 2
+        x: 8119
+        y: 1289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a3a05b7799f1860800000000000000
+      internalID: 7502884243640040047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_57
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1259
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff8225a5a2a4f630800000000000000
+      internalID: 3959968804689317885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_58
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 1259
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b268cfc6aeee821f0800000000000000
+      internalID: -1069342220882246101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_59
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 1229
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e03690b9ff339f40800000000000000
+      internalID: 5733997092214812897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_60
+      rect:
+        serializedVersion: 2
+        x: 5579
+        y: 1239
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6578fd26f038e2f0800000000000000
+      internalID: -943450288042773141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_61
+      rect:
+        serializedVersion: 2
+        x: 7819
+        y: 1239
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eb91074ad48f250800000000000000
+      internalID: 5978613873985044079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_62
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1149
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95ecb506b0d5d810800000000000000
+      internalID: 1789565907148531100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_63
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1189
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6062c711b21c748a0800000000000000
+      internalID: -6320871161270098426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_64
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782810bbd31fea820800000000000000
+      internalID: 2931545654897508999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_65
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 1179
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0621459bc76ef60800000000000000
+      internalID: 8063269318274736355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_66
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1119
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510200bc908075780800000000000000
+      internalID: -8694471717461942251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_67
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 1129
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab315f142de0fbb0800000000000000
+      internalID: -4904159254806447192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_68
+      rect:
+        serializedVersion: 2
+        x: 4869
+        y: 1139
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa7a486d25385d0800000000000000
+      internalID: -3061512240379745582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_69
+      rect:
+        serializedVersion: 2
+        x: 7109
+        y: 1119
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794798c35381ec610800000000000000
+      internalID: 1643277530964784279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_70
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1069
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c67c805c6f7ef40800000000000000
+      internalID: 5757841974732745819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_71
+      rect:
+        serializedVersion: 2
+        x: 4909
+        y: 809
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c222b0942c1dd660800000000000000
+      internalID: 7412111505093698241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_72
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 789
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb262ba663272700800000000000000
+      internalID: 515419606222252976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_73
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 779
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0232274a5383b7c00800000000000000
+      internalID: 899374353633911584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_74
+      rect:
+        serializedVersion: 2
+        x: 5009
+        y: 779
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8d795392f00f1e0800000000000000
+      internalID: -2166214751097988900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_75
+      rect:
+        serializedVersion: 2
+        x: 5179
+        y: 789
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4023778c3deba1730800000000000000
+      internalID: 3970695838291145220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_76
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 759
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944f569c1b12664f0800000000000000
+      internalID: -835943633358818231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_77
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 769
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31220667a804be2f0800000000000000
+      internalID: -942588733568310765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_78
+      rect:
+        serializedVersion: 2
+        x: 4919
+        y: 759
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7342d4bc46e56590800000000000000
+      internalID: -7681480372284931206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_79
+      rect:
+        serializedVersion: 2
+        x: 5029
+        y: 769
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec079727727ffe30800000000000000
+      internalID: 4539472805503634670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_80
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 749
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888747bf851da1ec0800000000000000
+      internalID: -3595331172395878264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_81
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 739
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61494aceae67dd7e0800000000000000
+      internalID: -1739103129730509802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_82
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 739
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4572b8cd7ec2410800000000000000
+      internalID: 1453791714147259554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_83
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 739
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb45c691d1b23820800000000000000
+      internalID: 2896573024088443826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_84
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 749
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978b4189b1c09c040800000000000000
+      internalID: 4668275801401374841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_85
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 729
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f7181e4f84a7030800000000000000
+      internalID: 3493184677571821451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_86
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 719
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463619243b982f4e0800000000000000
+      internalID: -1949344285689027740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_87
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 719
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a44ce2116ab1b470800000000000000
+      internalID: 8408706905369494689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_88
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 699
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c0f64ad197ada30800000000000000
+      internalID: 4240835167342496840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_89
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 689
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23a26e70d9869820800000000000000
+      internalID: 2924676536590312237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_90
+      rect:
+        serializedVersion: 2
+        x: 3909
+        y: 669
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bcf80c286f02d40800000000000000
+      internalID: 5557712981612022544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_91
+      rect:
+        serializedVersion: 2
+        x: 5049
+        y: 699
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e855288885e20f0800000000000000
+      internalID: -1139876312352715250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_92
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 629
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3ee82399339c9c0800000000000000
+      internalID: -3906534468695956502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_93
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 679
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77607cf51db1274d0800000000000000
+      internalID: -3138415404254820745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_94
+      rect:
+        serializedVersion: 2
+        x: 3849
+        y: 669
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326355a2cf05d3ff0800000000000000
+      internalID: -54798576486369757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_95
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 659
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5d402c390710b70800000000000000
+      internalID: 8863489321559447037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_96
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 629
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bd23a3fb57aa020800000000000000
+      internalID: 2353823219430120253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_97
+      rect:
+        serializedVersion: 2
+        x: 5749
+        y: 19
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f76a114951dedd10800000000000000
+      internalID: 2152387853204219895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_98
+      rect:
+        serializedVersion: 2
+        x: 7909
+        y: 29
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb23ff221afeb850800000000000000
+      internalID: 6394823476933503935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_99
+      rect:
+        serializedVersion: 2
+        x: 7989
+        y: 19
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6945026466c07aa30800000000000000
+      internalID: 4226360408713221270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_bubble_animate_100
+      rect:
+        serializedVersion: 2
+        x: 5639
+        y: 0
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546c7e964d52c8990800000000000000
+      internalID: -7382484094926993851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

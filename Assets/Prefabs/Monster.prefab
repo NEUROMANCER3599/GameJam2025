@@ -105,8 +105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1800511011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -6987148479580219570, guid: 4563d7d1c33caff4caa7faa24f3ee19d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -293,7 +293,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -318,7 +318,10 @@ MonoBehaviour:
   StarfishAnimator: {fileID: 1938243784296158275}
   BubbleSprite: {fileID: 8024079876036527697}
   StarfishSprite: {fileID: 3570056333537133505}
+  HitParticlePrefab: {fileID: 3513676070670084347, guid: b97d352c7ddfa6d45a1e8570c2859328, type: 3}
   BaseScore: 500
+  DeathSound: {fileID: 7420323017685600839, guid: 8085b80ba912aec448469cc430318fc0, type: 3}
+  AttackSound: {fileID: 7420323017685600839, guid: 6d4de574104a4644086d7900e956835d, type: 3}
 --- !u!1 &8024079876036527697
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,8 +396,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1800511011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -525392515, guid: 7268ac70713a51c45afc81b6d6c5e955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

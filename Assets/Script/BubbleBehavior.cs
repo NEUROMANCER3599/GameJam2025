@@ -23,9 +23,11 @@ public class BubbleBehavior : MonoBehaviour
     private float Lifespan;
     private float TouchedLifeSpan;
     private bool IsTouched = false;
+    private bool IsPopped = false;
     private Scoring scoring;
     public int BaseScore = 100;
     public int LifeBonus = 0;
+    public GameObject PopSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,7 +66,7 @@ public class BubbleBehavior : MonoBehaviour
         }
        
     
-        if(Lifespan <= 0  && !IsStartingBubble)
+        if(Lifespan <= 0  && !IsStartingBubble && !IsPopped)
         {
             BubbleDestruction();
         }
@@ -82,6 +84,8 @@ public class BubbleBehavior : MonoBehaviour
 
    void BubbleDestruction()
     {
+        IsPopped = true;
+        Instantiate(PopSound, transform.position, Quaternion.identity);
         circleCollider.enabled = false;
         BubbleAnimator.SetTrigger("OnDeath");
         Destroy(gameObject,1f);
@@ -99,6 +103,17 @@ public class BubbleBehavior : MonoBehaviour
             }
             
         }
+
+        if (collision.gameObject.GetComponent<FallingItem>())
+        {
+            FallingItem item = collision.gameObject.GetComponent<FallingItem>();
+            if (item.PoppedCheck() && LifeBonus == 0)
+            {
+                scoring.OnScoring(BaseScore);
+                BubbleDestruction();
+            }
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -117,6 +132,12 @@ public class BubbleBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Cleaner")
         {
             Destroy(gameObject);
+        }
+
+        if(collision.gameObject.tag == "Explosion")
+        {
+            scoring.OnScoring(BaseScore);
+            BubbleDestruction();
         }
     }
 }

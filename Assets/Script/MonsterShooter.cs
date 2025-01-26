@@ -11,6 +11,7 @@ public class MonsterShooter : MonoBehaviour
     public Animator StarfishAnimator;
     public GameObject BubbleSprite;
     public GameObject StarfishSprite;
+    public GameObject HitParticlePrefab;
     private Transform playerTransform;
     private PlayerMovement player; // อ้างอิงตำแหน่งของผู้เล่น
     private Rigidbody2D rb;
@@ -19,6 +20,8 @@ public class MonsterShooter : MonoBehaviour
     private bool IsTouched = false;
     private Scoring scoring;
     public int BaseScore = 500;
+    public GameObject DeathSound;
+    public GameObject AttackSound;
     void Start()
     {
         // หา player โดยใช้ Tag "Player"
@@ -81,12 +84,17 @@ public class MonsterShooter : MonoBehaviour
 
     void Death()
     {
-        IsDead = true;
-        BubbleAnimator.SetTrigger("OnDeath");
-        StarfishAnimator.SetTrigger("OnDeath");
-        rb.gravityScale = 1;
-        rb.freezeRotation = false;
-        Invoke(nameof(DisableSprite), 1f);
+        if (!IsDead)
+        {
+            IsDead = true;
+            Instantiate(DeathSound, transform.position, Quaternion.identity);
+            BubbleAnimator.SetTrigger("OnDeath");
+            StarfishAnimator.SetTrigger("OnDeath");
+            rb.gravityScale = 1;
+            rb.freezeRotation = false;
+            Invoke(nameof(DisableSprite), 1f);
+        }
+       
 
     }
 
@@ -103,6 +111,7 @@ public class MonsterShooter : MonoBehaviour
         {
             if (playerTransform.position.y < firePoint.transform.position.y)
             {
+                Instantiate(AttackSound, transform.position, Quaternion.identity);
                 StarfishAnimator.SetTrigger("Attacking");
                 // สร้าง projectile
                 Debug.Log("Player is below");
@@ -118,6 +127,11 @@ public class MonsterShooter : MonoBehaviour
         if (collision.gameObject.tag == "Cleaner")
         {
             Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Explosion")
+        {
+            scoring.OnScoring(BaseScore);
+            Death();
         }
     }
 
@@ -137,6 +151,7 @@ public class MonsterShooter : MonoBehaviour
             MonsterShooter monsterentity = collision.gameObject.GetComponent<MonsterShooter>();
             if (monsterentity.DeathCheck())
             {
+                Instantiate(HitParticlePrefab, collision.transform.position, Quaternion.identity);
                 scoring.OnScoring(BaseScore);
                 Death();
             }
@@ -146,6 +161,17 @@ public class MonsterShooter : MonoBehaviour
         {
             MonsterChargerr monsterentity = collision.gameObject.GetComponent<MonsterChargerr>();
             if (monsterentity.DeathCheck())
+            {
+                Instantiate(HitParticlePrefab, collision.transform.position, Quaternion.identity);
+                scoring.OnScoring(BaseScore);
+                Death();
+            }
+        }
+
+        if (collision.gameObject.GetComponent<FallingItem>())
+        {
+            FallingItem item = collision.gameObject.GetComponent<FallingItem>();
+            if (item.PoppedCheck())
             {
                 scoring.OnScoring(BaseScore);
                 Death();

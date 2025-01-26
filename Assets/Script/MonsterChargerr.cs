@@ -11,10 +11,12 @@ public class MonsterChargerr : MonoBehaviour
     private bool IsDead = false;
     private bool IsTouched = false;
     private bool IsCharging = false;
-    
+    public GameObject HitParticlePrefab;
     private Scoring scoring;
     public int BaseScore = 500;
     public Animator DolphinAnimator;
+    public GameObject DeathSound;
+    public GameObject AttackSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -77,6 +79,7 @@ public class MonsterChargerr : MonoBehaviour
 
     void ChargePlayer()
     {
+        Instantiate(AttackSound, transform.position, Quaternion.identity);
         DolphinAnimator.SetTrigger("OnAttack");
         IsCharging = true;
         if(transform.position.x < player.transform.position.x)
@@ -110,11 +113,16 @@ public class MonsterChargerr : MonoBehaviour
 
     void Death()
     {
-        IsDead = true;
-        rb.gravityScale = 2;
-        rb.freezeRotation = false;
-        DolphinAnimator.SetTrigger("OnDeath");
-
+        if (!IsDead)
+        {
+            
+            IsDead = true;
+            Instantiate(DeathSound, transform.position, Quaternion.identity);
+            rb.gravityScale = 2;
+            rb.freezeRotation = false;
+            DolphinAnimator.SetTrigger("OnDeath");
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -122,6 +130,11 @@ public class MonsterChargerr : MonoBehaviour
         if (collision.gameObject.tag == "Cleaner")
         {
             Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Explosion")
+        {
+            scoring.OnScoring(BaseScore);
+            Death();
         }
     }
 
@@ -137,23 +150,14 @@ public class MonsterChargerr : MonoBehaviour
 
         }
 
-        /*
-        if (collision.gameObject.GetComponent<PlayerHealth>())
-        {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            if (!IsCharging)
-            {
-                playerHealth.TakeDamage(1);
-            }
-           
-        }
-        */
+       
 
         if (collision.gameObject.GetComponent<MonsterShooter>())
         {
             MonsterShooter monsterentity = collision.gameObject.GetComponent<MonsterShooter>();
             if (monsterentity.DeathCheck())
             {
+                Instantiate(HitParticlePrefab, collision.transform.position, Quaternion.identity);
                 scoring.OnScoring(BaseScore);
                 Death();
             }
@@ -163,6 +167,17 @@ public class MonsterChargerr : MonoBehaviour
         {
             MonsterChargerr monsterentity = collision.gameObject.GetComponent<MonsterChargerr>();
             if (monsterentity.DeathCheck())
+            {
+                Instantiate(HitParticlePrefab, collision.transform.position, Quaternion.identity);
+                scoring.OnScoring(BaseScore);
+                Death();
+            }
+        }
+
+        if (collision.gameObject.GetComponent<FallingItem>())
+        {
+            FallingItem item = collision.gameObject.GetComponent<FallingItem>();
+            if (item.PoppedCheck())
             {
                 scoring.OnScoring(BaseScore);
                 Death();
@@ -178,6 +193,8 @@ public class MonsterChargerr : MonoBehaviour
             IsTouched = false;
         }
     }
+
+
 
     public bool DeathCheck()
     {

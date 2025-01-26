@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public float flashCooldown = 0f; // ตัวแปรสำหรับจับเวลา
     private UIControl UISystem;
     private bool IsDead = false;
+    public GameObject DmgSound;
+    public GameObject DeathSound;
     void Start()
     {
         UISystem = FindAnyObjectByType<UIControl>();
@@ -27,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Instantiate(DmgSound, transform.position, Quaternion.identity);
         if (isFlashing != true)
         {
             flashEffect.Flash(); // Flash Effect
@@ -37,8 +40,9 @@ public class PlayerHealth : MonoBehaviour
         }
        
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !IsDead)
         {
+            Instantiate(DeathSound, transform.position, Quaternion.identity);
             Die(); // เรียกฟังก์ชันเมื่อผู้เล่นตาย
         }
     }
@@ -46,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         IsDead = true;
+        
         gameObject.layer = 10;
         UISystem.OnGameOver();
         Debug.Log("Player is dead!");

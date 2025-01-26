@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1800511011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -525392515, guid: 7268ac70713a51c45afc81b6d6c5e955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -260,7 +260,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -283,3 +283,5 @@ MonoBehaviour:
   SpeedCap: 20
   BubbleAnimator: {fileID: 3210806098715925604}
   BaseScore: 100
+  LifeBonus: 0
+  PopSound: {fileID: 7420323017685600839, guid: 43c4fe2654566554fb70a7f38387cefc, type: 3}

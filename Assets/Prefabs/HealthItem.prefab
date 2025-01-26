@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8868699038752816103}
   - component: {fileID: 9207506150963751268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ItemSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1800511011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 5443020518576346028, guid: ef5bc827c14139c4681d97af062db49c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 269581031004034124}
   - component: {fileID: 1518167975380600405}
   - component: {fileID: 1916440820363025272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BubbleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,8 +161,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1800511011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -525392515, guid: 7268ac70713a51c45afc81b6d6c5e955, type: 3}
   m_Color: {r: 0.67075443, g: 1, b: 0.4584905, a: 1}
@@ -210,9 +210,9 @@ GameObject:
   - component: {fileID: 4292769273861976141}
   - component: {fileID: 4199822127542556217}
   - component: {fileID: 2191772681303348788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthItem
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,6 +345,7 @@ MonoBehaviour:
   BubbleAnimator: {fileID: 1916440820363025272}
   BaseScore: 1000
   LifeBonus: 1
+  PopSound: {fileID: 7420323017685600839, guid: 305793d1f1ae85842a3c1829cf281086, type: 3}
 --- !u!50 &2191772681303348788
 Rigidbody2D:
   serializedVersion: 5
@@ -368,7 +369,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4

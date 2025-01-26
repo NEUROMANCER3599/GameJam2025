@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerHealth HealthModule;
     public GameObject JumpParticlePrefab;
     public Transform JumpParticleSpawnPos;
+    public GameObject JumpSound;
+    public GameObject LandingSound;
 
     void Start()
     {
@@ -77,7 +79,9 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded)
             {
                 Instantiate(JumpParticlePrefab, JumpParticleSpawnPos.position, Quaternion.identity);
+                Instantiate(JumpSound, JumpParticleSpawnPos.position, Quaternion.identity);
                 rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+                
             }
             
         }
@@ -102,7 +106,8 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.tag == GroundCheckTag)
         {
             isGrounded = true;
-            
+            Instantiate(LandingSound, JumpParticleSpawnPos.position, Quaternion.identity);
+
         }
     }
 
