@@ -18,6 +18,10 @@ public class BossHealth : MonoBehaviour
     [SerializeField] private int HitScore;
     [SerializeField] private int DeathScore;
     private PlayerMovement player;
+    private PlayerHealth playerHealth;
+    private PlayerFalling playerFalling;
+    private float WinTimer = 3f;
+    private UIControl UISystem;
 
 
     private void Start()
@@ -26,6 +30,9 @@ public class BossHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         scoring = FindAnyObjectByType<Scoring>();
         player = FindAnyObjectByType<PlayerMovement>();
+        playerHealth = FindAnyObjectByType<PlayerHealth>();
+        playerFalling = FindAnyObjectByType<PlayerFalling>();
+        UISystem = FindAnyObjectByType<UIControl>();
     }
     public void TakeDamage(int damage)
     {
@@ -62,8 +69,19 @@ public class BossHealth : MonoBehaviour
         rb.gravityScale = 0.5f;
         Instantiate(FinalExplosion,transform.position, Quaternion.identity);
         Instantiate(MinaProp, transform.position, Quaternion.identity);
+        playerHealth.OnWin();
+        playerFalling.OnWin();
+        Invoke(nameof(GameWin), WinTimer);
+
         // bossSystem.enabled = false;
 
+    }
+
+    void GameWin()
+    {
+        // player.gameObject.SetActive(false);
+        Time.timeScale = 0;
+        UISystem.OnWin();
     }
 
     public bool DeathCheck()

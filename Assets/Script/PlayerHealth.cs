@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     private bool IsDead = false;
     public GameObject DmgSound;
     public GameObject DeathSound;
+    private bool Invincible = false;
     void Start()
     {
         UISystem = FindAnyObjectByType<UIControl>();
@@ -29,22 +30,26 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Instantiate(DmgSound, transform.position, Quaternion.identity);
-        if (isFlashing != true)
+        if (!Invincible)
         {
-            flashEffect.Flash(); // Flash Effect
-            currentHealth -= damage; // ลดพลังชีวิตตามความเสียหาย
-            Debug.Log("Player Health: " + currentHealth);
-            isFlashing = true;
-            flashCooldown = Time.time + 1f;
-        }
-       
+            Instantiate(DmgSound, transform.position, Quaternion.identity);
+            if (isFlashing != true)
+            {
+                flashEffect.Flash(); // Flash Effect
+                currentHealth -= damage; // ลดพลังชีวิตตามความเสียหาย
+                Debug.Log("Player Health: " + currentHealth);
+                isFlashing = true;
+                flashCooldown = Time.time + 1f;
+            }
 
-        if (currentHealth <= 0 && !IsDead)
-        {
-            Instantiate(DeathSound, transform.position, Quaternion.identity);
-            Die(); // เรียกฟังก์ชันเมื่อผู้เล่นตาย
+
+            if (currentHealth <= 0 && !IsDead)
+            {
+                Instantiate(DeathSound, transform.position, Quaternion.identity);
+                Die(); // เรียกฟังก์ชันเมื่อผู้เล่นตาย
+            }
         }
+     
     }
 
     public void Die()
@@ -58,7 +63,10 @@ public class PlayerHealth : MonoBehaviour
     }
 
   
-
+    public void OnWin()
+    {
+        Invincible = true;
+    }
     public bool PlayerDeathCheck()
     {
         return IsDead;

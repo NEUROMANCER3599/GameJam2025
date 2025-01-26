@@ -12,6 +12,7 @@ public class PlayerFalling : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     private CinemachineBrain cinemachineBrain;
     private PlayerHealth player;
+    private bool IsWon = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,15 +45,24 @@ public class PlayerFalling : MonoBehaviour
     
     private void PerformAction()
     {
-        // Disable CameraTracking
-        if (cinemachineBrain != null)
+        if (!IsWon)
         {
-            cinemachineBrain.enabled = false;
-            Debug.Log("Cinemachine Brain disabled.");
+            // Disable CameraTracking
+            if (cinemachineBrain != null)
+            {
+                cinemachineBrain.enabled = false;
+                Debug.Log("Cinemachine Brain disabled.");
+            }
+
+            player.Die();
+            Debug.Log("Velocity exceeded the threshold for 3 seconds!");
         }
-        
-        player.Die();
-        Debug.Log("Velocity exceeded the threshold for 3 seconds!");
+       
         // ทำบางอย่างที่คุณต้องการ
+    }
+
+    public void OnWin()
+    {
+        IsWon = true;
     }
 }

@@ -25,6 +25,11 @@ public class UIControl : MonoBehaviour
     [SerializeField] private TextMeshProUGUI HighScoreTxt;
     [SerializeField] private TextMeshProUGUI TotalComboTxt;
     [SerializeField] private TextMeshProUGUI BestComboTxt;
+    [SerializeField] private GameObject LoseBG;
+    [SerializeField] private GameObject WinBG;
+    [SerializeField] private GameObject WinImg;
+    [SerializeField] private GameObject WinTitle;
+    [SerializeField] private GameObject LoseTitle;
 
     [Header("Reference")]
     private PlayerHealth playerHealth;
@@ -127,10 +132,31 @@ public class UIControl : MonoBehaviour
         ScoringModule.OnSummary();
         InGameUI.SetActive(false);
         SummaryPanel.SetActive(true);
+        WinBG.SetActive(false);
+        WinTitle.SetActive(false);
+        WinImg.SetActive(false);
+        LoseBG.SetActive(true);
+        LoseTitle.SetActive(true);
         TotalScoreTxt.text = "Total Score: " + ScoringModule.CheckScore().ToString();
         TotalComboTxt.text = "Max Combo: " + ScoringModule.CheckMaxCombo().ToString();
         HighScoreTxt.text = "Highscore: " + scoreRecord.Highscore.ToString();
         BestComboTxt.text = "Best Combo: " + scoreRecord.MaxCombo.ToString();
         
+    }
+
+   public void OnWin()
+    {
+        ScoringModule.OnSummary();
+        InGameUI.SetActive(false);
+        SummaryPanel.SetActive(true);
+        WinBG.SetActive(true);
+        WinTitle.SetActive(true);
+        WinImg.SetActive(true);
+        LoseBG.SetActive(false);
+        LoseTitle.SetActive(false);
+        TotalScoreTxt.text = "Total Score: " + ScoringModule.CheckScore().ToString();
+        TotalComboTxt.text = "Max Combo: " + ScoringModule.CheckMaxCombo().ToString();
+        HighScoreTxt.text = "Highscore: " + scoreRecord.Highscore.ToString();
+        BestComboTxt.text = "Best Combo: " + scoreRecord.MaxCombo.ToString();
     }
 }
