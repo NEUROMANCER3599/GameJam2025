@@ -396,6 +396,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2634,7 +2647,108 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      parallax_bubble_animate_0: -6697939342017581197
+      parallax_bubble_animate_1: 6565165382402135627
+      parallax_bubble_animate_10: 7489211396252434877
+      parallax_bubble_animate_100: -7382484094926993851
+      parallax_bubble_animate_11: 7887566949850332478
+      parallax_bubble_animate_12: 2979500339121915675
+      parallax_bubble_animate_13: -8993220957528538164
+      parallax_bubble_animate_14: -5393143545097299643
+      parallax_bubble_animate_15: -5261560020293360133
+      parallax_bubble_animate_16: 4546127998768422002
+      parallax_bubble_animate_17: -5397464263110036708
+      parallax_bubble_animate_18: -8712923105300228932
+      parallax_bubble_animate_19: 6904509837735341340
+      parallax_bubble_animate_2: 184864441748622564
+      parallax_bubble_animate_20: 6121220187133116109
+      parallax_bubble_animate_21: -3107166029727774658
+      parallax_bubble_animate_22: -2315651521250162209
+      parallax_bubble_animate_23: 4815780053535078687
+      parallax_bubble_animate_24: 5828342137732085880
+      parallax_bubble_animate_25: -598200561828655757
+      parallax_bubble_animate_26: -7226609672174959610
+      parallax_bubble_animate_27: -9091563029156348433
+      parallax_bubble_animate_28: 5704193967905190145
+      parallax_bubble_animate_29: -4534435612502590893
+      parallax_bubble_animate_3: 3206145291191141646
+      parallax_bubble_animate_30: 4312350908917299554
+      parallax_bubble_animate_31: 830307118787468364
+      parallax_bubble_animate_32: 1350057889631737987
+      parallax_bubble_animate_33: -805369979449818209
+      parallax_bubble_animate_34: 347330938053173471
+      parallax_bubble_animate_35: 8729964907145954826
+      parallax_bubble_animate_36: -1648059934784363239
+      parallax_bubble_animate_37: 6726331237080891582
+      parallax_bubble_animate_38: -3356455086229516797
+      parallax_bubble_animate_39: -2349551609085989201
+      parallax_bubble_animate_4: 5114475031256873806
+      parallax_bubble_animate_40: -2238233099987650871
+      parallax_bubble_animate_41: 8848111548825061993
+      parallax_bubble_animate_42: 3374216206097436103
+      parallax_bubble_animate_43: -8959340265427756319
+      parallax_bubble_animate_44: -961622533423764391
+      parallax_bubble_animate_45: -1256688090280612717
+      parallax_bubble_animate_46: 526636963952583053
+      parallax_bubble_animate_47: 3674109022074320646
+      parallax_bubble_animate_48: 4819387112822959402
+      parallax_bubble_animate_49: -1333280841403993087
+      parallax_bubble_animate_5: 331559469370860467
+      parallax_bubble_animate_50: 6208137096251914567
+      parallax_bubble_animate_51: 8112769624267154763
+      parallax_bubble_animate_52: -7647317462201878045
+      parallax_bubble_animate_53: 8134747896441097484
+      parallax_bubble_animate_54: 3841910336273309546
+      parallax_bubble_animate_55: -8982948001390235260
+      parallax_bubble_animate_56: 7502884243640040047
+      parallax_bubble_animate_57: 3959968804689317885
+      parallax_bubble_animate_58: -1069342220882246101
+      parallax_bubble_animate_59: 5733997092214812897
+      parallax_bubble_animate_6: 1756892254910706898
+      parallax_bubble_animate_60: -943450288042773141
+      parallax_bubble_animate_61: 5978613873985044079
+      parallax_bubble_animate_62: 1789565907148531100
+      parallax_bubble_animate_63: -6320871161270098426
+      parallax_bubble_animate_64: 2931545654897508999
+      parallax_bubble_animate_65: 8063269318274736355
+      parallax_bubble_animate_66: -8694471717461942251
+      parallax_bubble_animate_67: -4904159254806447192
+      parallax_bubble_animate_68: -3061512240379745582
+      parallax_bubble_animate_69: 1643277530964784279
+      parallax_bubble_animate_7: 1950513460996032095
+      parallax_bubble_animate_70: 5757841974732745819
+      parallax_bubble_animate_71: 7412111505093698241
+      parallax_bubble_animate_72: 515419606222252976
+      parallax_bubble_animate_73: 899374353633911584
+      parallax_bubble_animate_74: -2166214751097988900
+      parallax_bubble_animate_75: 3970695838291145220
+      parallax_bubble_animate_76: -835943633358818231
+      parallax_bubble_animate_77: -942588733568310765
+      parallax_bubble_animate_78: -7681480372284931206
+      parallax_bubble_animate_79: 4539472805503634670
+      parallax_bubble_animate_8: -7328146450277484455
+      parallax_bubble_animate_80: -3595331172395878264
+      parallax_bubble_animate_81: -1739103129730509802
+      parallax_bubble_animate_82: 1453791714147259554
+      parallax_bubble_animate_83: 2896573024088443826
+      parallax_bubble_animate_84: 4668275801401374841
+      parallax_bubble_animate_85: 3493184677571821451
+      parallax_bubble_animate_86: -1949344285689027740
+      parallax_bubble_animate_87: 8408706905369494689
+      parallax_bubble_animate_88: 4240835167342496840
+      parallax_bubble_animate_89: 2924676536590312237
+      parallax_bubble_animate_9: -6938755171402926982
+      parallax_bubble_animate_90: 5557712981612022544
+      parallax_bubble_animate_91: -1139876312352715250
+      parallax_bubble_animate_92: -3906534468695956502
+      parallax_bubble_animate_93: -3138415404254820745
+      parallax_bubble_animate_94: -54798576486369757
+      parallax_bubble_animate_95: 8863489321559447037
+      parallax_bubble_animate_96: 2353823219430120253
+      parallax_bubble_animate_97: 2152387853204219895
+      parallax_bubble_animate_98: 6394823476933503935
+      parallax_bubble_animate_99: 4226360408713221270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
