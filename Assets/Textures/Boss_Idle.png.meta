@@ -117,8 +117,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 770
-        height: 1080
+        width: 830
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,10 +137,10 @@ TextureImporter:
       name: Boss_Idle_1
       rect:
         serializedVersion: 2
-        x: 770
+        x: 830
         y: 0
-        width: 770
-        height: 1080
+        width: 830
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: Boss_Idle_2
       rect:
         serializedVersion: 2
-        x: 1540
+        x: 1660
         y: 0
-        width: 770
-        height: 1080
+        width: 830
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Boss_Idle_3
       rect:
         serializedVersion: 2
-        x: 2310
+        x: 2490
         y: 0
-        width: 770
-        height: 1080
+        width: 830
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: Boss_Idle_4
       rect:
         serializedVersion: 2
-        x: 3080
+        x: 3320
         y: 0
-        width: 770
-        height: 1080
+        width: 830
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

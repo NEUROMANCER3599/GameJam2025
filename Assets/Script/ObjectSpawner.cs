@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SocialPlatforms.Impl;
 public class ObjectSpawner : MonoBehaviour
 {
     [Header("Parameters")]
@@ -8,10 +9,11 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject BubblePrefab; // พรีแฟบของวัตถุที่ต้องการสุ่มเกิด
     public List<GameObject> MonsterPrefabs;
     public List<GameObject> ItemPrefabs;
-    
+    public GameObject BossPrefab;
     public float minX = -5f; // ตำแหน่ง X ต่ำสุด
     public float maxX = 5f; // ตำแหน่ง X สูงสุด
     public float startY = -5f; // ตำแหน่ง Y ที่วัตถุเริ่มเกิด
+    
 
     [Header("System")]
     public float BPM;
@@ -21,7 +23,9 @@ public class ObjectSpawner : MonoBehaviour
     private float EnemySpawnInterval;
     private float ItemSpawnDuration;
     private float ItemSpawnInterval;
-   
+    private Scoring scoringModule;
+    [SerializeField] private HighscoreRecord highscoreRec;
+    private bool SpawnedBoss = false;
 
 
     void Start()
@@ -30,6 +34,7 @@ public class ObjectSpawner : MonoBehaviour
         // เรียกใช้ฟังก์ชัน SpawnObject ซ้ำ ๆ
         OnBegin();
         playerTransform = GameObject.FindAnyObjectByType<PlayerMovement>().transform;
+        scoringModule = FindAnyObjectByType<Scoring>();
         //InvokeRepeating("SpawnObject", 0f, spawnInterval);
 
     }
@@ -77,6 +82,36 @@ public class ObjectSpawner : MonoBehaviour
 
             ItemSpawnInterval = Random.Range(ItemSpawnDuration, ItemSpawnDuration * 2f);
         }
+
+        if (!SpawnedBoss)
+        {
+            if (highscoreRec.Highscore < 75000)
+            {
+                if (scoringModule.CheckScore() > 75000)
+                {
+                    SpawnBoss();
+                }
+
+            }
+            else
+            {
+                if (scoringModule.CheckScore() > highscoreRec.Highscore * (Random.Range(1.25f,1.3f)))
+                {
+                    SpawnBoss();
+                }
+            }
+        }
+    }
+
+    public void SpawnBoss()
+    {
+        SpawnedBoss = true;
+
+        float randomX = Random.Range(minX, maxX);
+        Vector3 spawnPosition = new Vector3(randomX, playerTransform.position.y - startY, 0f);
+
+        // สร้างวัตถุ
+        Instantiate(BossPrefab, spawnPosition, Quaternion.identity);
     }
 
     public void SpawnBubbles()

@@ -210,8 +210,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 970
-        height: 1190
+        width: 890
+        height: 1160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: Boss_Attack_1
       rect:
         serializedVersion: 2
-        x: 970
+        x: 890
         y: 0
-        width: 970
-        height: 1190
+        width: 890
+        height: 1160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: Boss_Attack_2
       rect:
         serializedVersion: 2
-        x: 1940
+        x: 1780
         y: 0
-        width: 970
-        height: 1190
+        width: 890
+        height: 1160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: Boss_Attack_3
       rect:
         serializedVersion: 2
-        x: 2910
+        x: 2670
         y: 0
-        width: 970
-        height: 1190
+        width: 890
+        height: 1160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: Boss_Attack_4
       rect:
         serializedVersion: 2
-        x: 3880
+        x: 3560
         y: 0
-        width: 970
-        height: 1190
+        width: 890
+        height: 1160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

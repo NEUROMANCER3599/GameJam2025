@@ -124,12 +124,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d5b4a6fc08b8941a07947ab18c05da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   JumpForce: 10
   GroundCheckTag: Ground
   PlayerSprite: {fileID: 6218187688271554125}
   PlayerAnimator: {fileID: 4026040318372549986}
   rb: {fileID: 0}
+  isGrounded: 0
   JumpParticlePrefab: {fileID: 3513676070670084347, guid: 467081c9f7a826249b6dd6a6664fdd6d, type: 3}
   JumpParticleSpawnPos: {fileID: 8540688642103130100}
   JumpSound: {fileID: 7420323017685600839, guid: e42c67da01500e344924a6b009c1763a, type: 3}

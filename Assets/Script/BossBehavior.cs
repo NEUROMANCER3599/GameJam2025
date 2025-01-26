@@ -24,6 +24,9 @@ public class BossBehavior : MonoBehaviour
     private float skillTimer = 0f; // ตัวจับเวลาสำหรับการ Spawn สกิล
     public float cooldownTime = 5f; // เวลาที่ต้องรอก่อนใช้สกิลใหม่
     private float timeSinceLastSkill = 0f; // ตัวจับเวลาสำหรับการใช้งานสกิลล่าสุด
+
+    [Header("Animator")]
+    public Animator BossAnimator;
     private void Start()
     {
         _bossHealth = GetComponent<BossHealth>();
@@ -79,6 +82,7 @@ public class BossBehavior : MonoBehaviour
         if (skillTimer >= skillSpawnInterval && timeSinceLastSkill >= cooldownTime)
         {
             SpawnRandomSkill();
+            BossAnimator.SetTrigger("OnAttack");
             skillTimer = 0f; // รีเซ็ตตัวจับเวลา
             timeSinceLastSkill = 0f; // รีเซ็ตตัวจับเวลาสำหรับสกิลล่าสุด
         }

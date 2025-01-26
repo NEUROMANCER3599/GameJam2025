@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 93db2e96635928842a0681f1a4d2c9e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1391249503118014116
+    second: parallax_coral1_0
+  - first:
+      213: 3602889789087482066
+    second: parallax_coral1_1
+  - first:
+      213: 5591901876695398392
+    second: parallax_coral1_2
+  - first:
+      213: -7195355783399936220
+    second: parallax_coral1_3
+  - first:
+      213: 8675802634467391049
+    second: parallax_coral1_4
+  - first:
+      213: -6620212636163799233
+    second: parallax_coral1_5
+  - first:
+      213: 8299387016945049389
+    second: parallax_coral1_6
+  - first:
+      213: -6372831768914038576
+    second: parallax_coral1_7
+  - first:
+      213: -6796494584605851297
+    second: parallax_coral1_8
+  - first:
+      213: 8712108365438238418
+    second: parallax_coral1_9
+  - first:
+      213: 7276324923062397958
+    second: parallax_coral1_10
+  - first:
+      213: 8917345136042908464
+    second: parallax_coral1_11
+  - first:
+      213: -2129567644989618125
+    second: parallax_coral1_12
+  - first:
+      213: 583675747572525467
+    second: parallax_coral1_13
+  - first:
+      213: 4602575355111759705
+    second: parallax_coral1_14
+  - first:
+      213: -7195096821836683994
+    second: parallax_coral1_15
+  - first:
+      213: -9195928317688735119
+    second: parallax_coral1_16
+  - first:
+      213: 6834953922344455642
+    second: parallax_coral1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: parallax_coral1_0
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4619
+        width: 72
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6b94b4d06be4310800000000000000
+      internalID: 1391249503118014116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_1
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 4699
+        width: 52
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0017b9c29000230800000000000000
+      internalID: 3602889789087482066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_2
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 4289
+        width: 642
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7f443312d6a9d40800000000000000
+      internalID: 5591901876695398392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_3
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 4639
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fe4e1a906f42c90800000000000000
+      internalID: -7195355783399936220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_4
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 3969
+        width: 1032
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946b3d89784a66870800000000000000
+      internalID: 8675802634467391049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_5
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 3499
+        width: 852
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3787ebcea74024a0800000000000000
+      internalID: -6620212636163799233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_6
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 4159
+        width: 62
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f9f7615885d2370800000000000000
+      internalID: 8299387016945049389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2519
+        width: 412
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0fd8855472f87a0800000000000000
+      internalID: -6372831768914038576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_8
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2559
+        width: 922
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51c3b64f200ea1a0800000000000000
+      internalID: -6796494584605851297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_9
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2489
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deb7ae4660a7e870800000000000000
+      internalID: 8712108365438238418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_10
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2399
+        width: 92
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ca47547f2baf460800000000000000
+      internalID: 7276324923062397958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_11
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2499
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b1565b726c0cb70800000000000000
+      internalID: 8917345136042908464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_12
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 2039
+        width: 502
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3388a3382814272e0800000000000000
+      internalID: -2129567644989618125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_13
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1949
+        width: 1272
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99221efff1a91800800000000000000
+      internalID: 583675747572525467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_14
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2419
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f576566e1afdf30800000000000000
+      internalID: 4602575355111759705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_15
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 959
+        width: 462
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625e1e1df81e52c90800000000000000
+      internalID: -7195096821836683994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_16
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1419
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a153ccaef716080800000000000000
+      internalID: -9195928317688735119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallax_coral1_17
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 229
+        width: 1332
+        height: 1122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add01851162aade50800000000000000
+      internalID: 6834953922344455642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      parallax_coral1_0: 1391249503118014116
+      parallax_coral1_1: 3602889789087482066
+      parallax_coral1_10: 7276324923062397958
+      parallax_coral1_11: 8917345136042908464
+      parallax_coral1_12: -2129567644989618125
+      parallax_coral1_13: 583675747572525467
+      parallax_coral1_14: 4602575355111759705
+      parallax_coral1_15: -7195096821836683994
+      parallax_coral1_16: -9195928317688735119
+      parallax_coral1_17: 6834953922344455642
+      parallax_coral1_2: 5591901876695398392
+      parallax_coral1_3: -7195355783399936220
+      parallax_coral1_4: 8675802634467391049
+      parallax_coral1_5: -6620212636163799233
+      parallax_coral1_6: 8299387016945049389
+      parallax_coral1_7: -6372831768914038576
+      parallax_coral1_8: -6796494584605851297
+      parallax_coral1_9: 8712108365438238418
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

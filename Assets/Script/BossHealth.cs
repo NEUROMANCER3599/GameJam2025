@@ -7,18 +7,25 @@ public class BossHealth : MonoBehaviour
     public GameObject HitParticlePrefab;
     public GameObject HitSound;
     [SerializeField] private FlashEffect flashEffect;
+    [SerializeField] private Animator BossAnimator;
+    [SerializeField] private SpriteRenderer BossSprite;
+    [SerializeField] private GameObject MinaProp;
+    [SerializeField] private GameObject FinalExplosion;
     private BossBehavior bossSystem;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private bool IsDead;
     private Scoring scoring;
-    private int HitScore;
-    private int DeathScore;
+    [SerializeField] private int HitScore;
+    [SerializeField] private int DeathScore;
+    private PlayerMovement player;
+
 
     private void Start()
     {
         bossSystem = GetComponent<BossBehavior>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         scoring = FindAnyObjectByType<Scoring>();
+        player = FindAnyObjectByType<PlayerMovement>();
     }
     public void TakeDamage(int damage)
     {
@@ -30,11 +37,32 @@ public class BossHealth : MonoBehaviour
             Die(); // เรียกฟังก์ชันเมื่อผู้เล่นตาย
         }
     }
+    private void FixedUpdate()
+    {
+        if (!IsDead)
+        {
+            if (transform.position.x < player.transform.position.x)
+            {
+                //moveSpeed = Mathf.Abs(moveSpeed);
+                BossSprite.flipX = false;
+            }
+            else
+            {
+                BossSprite.flipX = true;
+
+            }
+        }
+    }
 
     void Die()
     {
         IsDead = true;
-       // bossSystem.enabled = false;
+        BossAnimator.SetBool("IsDead", true);
+        bossSystem.enabled = false;
+        rb.gravityScale = 0.5f;
+        Instantiate(FinalExplosion,transform.position, Quaternion.identity);
+        Instantiate(MinaProp, transform.position, Quaternion.identity);
+        // bossSystem.enabled = false;
 
     }
 
