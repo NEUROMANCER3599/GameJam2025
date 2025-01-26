@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa4405fc80f86124688f85b3702444e4, type: 3}
   m_Name: Highscore Record
   m_EditorClassIdentifier: 
-  Highscore: 0
-  MaxCombo: 0
+  Highscore: 15100
+  MaxCombo: 41
