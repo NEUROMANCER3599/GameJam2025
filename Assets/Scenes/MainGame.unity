@@ -900,6 +900,10 @@ PrefabInstance:
       propertyPath: distanceBetweenPlayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 644845112488317104, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      propertyPath: duration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1241966482977837902, guid: 44021176e7a33e14ea0628731570745b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -944,6 +948,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3003711566429053591, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003711566429053591, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003711566429053591, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003711566429053591, guid: 44021176e7a33e14ea0628731570745b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 28638862ea1084726a3511cd325fc53d, type: 2}
     - target: {fileID: 3725325417397124215, guid: 44021176e7a33e14ea0628731570745b, type: 3}
       propertyPath: m_Layer
       value: 12
