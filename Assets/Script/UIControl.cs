@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class UIControl : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class UIControl : MonoBehaviour
     [SerializeField] private Image ComboTImerFill;
     [SerializeField] private Sprite ValidHeart;
     [SerializeField] private Sprite InvalidHeart;
+    [SerializeField] private Slider BossTimerSlider;
 
     [Header("Components | GameOver")]
     [SerializeField] private HighscoreRecord scoreRecord;
@@ -158,5 +160,15 @@ public class UIControl : MonoBehaviour
         TotalComboTxt.text = "Max Combo: " + ScoringModule.CheckMaxCombo().ToString();
         HighScoreTxt.text = "Highscore: " + scoreRecord.Highscore.ToString();
         BestComboTxt.text = "Best Combo: " + scoreRecord.MaxCombo.ToString();
+    }
+
+    public void BossTimer(float bossInterval)
+    {
+        BossTimerSlider.value = bossInterval;
+    }
+
+    public void SetBossTimer(float bossInterval)
+    {
+        BossTimerSlider.maxValue = bossInterval;
     }
 }

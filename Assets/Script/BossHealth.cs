@@ -20,7 +20,7 @@ public class BossHealth : MonoBehaviour
     private PlayerMovement player;
     private PlayerHealth playerHealth;
     private PlayerFalling playerFalling;
-    private float WinTimer = 3f;
+    private float WinTimer = 5f;
     private UIControl UISystem;
 
 

@@ -23,23 +23,30 @@ public class ObjectSpawner : MonoBehaviour
     private float EnemySpawnInterval;
     private float ItemSpawnDuration;
     private float ItemSpawnInterval;
-    private Scoring scoringModule;
-    [SerializeField] private HighscoreRecord highscoreRec;
     private bool SpawnedBoss = false;
-
+    private float BossSpawnInterval = 0;
+    private float BossSpawnDuration;
+    private UIControl UISystem;
 
     void Start()
     {
-      
+
         // เรียกใช้ฟังก์ชัน SpawnObject ซ้ำ ๆ
         OnBegin();
         playerTransform = GameObject.FindAnyObjectByType<PlayerMovement>().transform;
-        scoringModule = FindAnyObjectByType<Scoring>();
+        BossSpawnInterval = 0;
+        BossSpawnDuration = Random.Range(60, 150);
+        UISystem = FindAnyObjectByType<UIControl>();
+        UISystem.SetBossTimer(BossSpawnDuration);
+        //Debug.Log("Boss Interval (s):" + SpawnInterval);
+
+
         //InvokeRepeating("SpawnObject", 0f, spawnInterval);
 
     }
     public void OnBegin()
     {
+        BPM = Random.Range(160, 200);
         BubblespawnDuration = 60 / BPM;
         EnemySpawnDuration = BubblespawnDuration * 4f;
         ItemSpawnDuration = BubblespawnDuration * 16f;
@@ -83,23 +90,14 @@ public class ObjectSpawner : MonoBehaviour
             ItemSpawnInterval = Random.Range(ItemSpawnDuration, ItemSpawnDuration * 2f);
         }
 
-        if (!SpawnedBoss)
+        if (!SpawnedBoss && BossSpawnInterval >= BossSpawnDuration) //SpawnBoss Logic
         {
-            if (highscoreRec.Highscore < 75000)
-            {
-                if (scoringModule.CheckScore() > 75000)
-                {
-                    SpawnBoss();
-                }
-
-            }
-            else
-            {
-                if (scoringModule.CheckScore() > highscoreRec.Highscore * (Random.Range(1.25f,1.3f)))
-                {
-                    SpawnBoss();
-                }
-            }
+            SpawnBoss();
+        }
+        else
+        {
+            BossSpawnInterval += 1f * Time.deltaTime;
+            UISystem.BossTimer(BossSpawnInterval);
         }
     }
 
